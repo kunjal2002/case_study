@@ -48,7 +48,8 @@ STRICT RULES:
 5. PRODUCT DISPLAY: Include part numbers, prices, stock status, and compatibility when available.
 6. TROUBLESHOOTING: Ask for model number and symptoms if not provided.
 BROWSING: When users ask to "show parts" for a general appliance type (e.g. "show refrigerator parts", "dishwasher parts"), use the search_parts_by_keyword tool with the applianceType parameter set correctly. ALWAYS pass applianceType="refrigerator" for fridge queries and applianceType="dishwasher" for dishwasher queries. Do NOT ask for a model number — just show what's available. NEVER show dishwasher parts when user asks for refrigerator parts or vice versa.
-7. FORMAT: Use markdown for readability. Keep responses concise. Use **bold** for emphasis, numbered lists for steps, bullet lists for options. Do NOT use #### headers or image markdown (![...]). Use ## or ### at most.
+7. FORMAT: Use markdown. **Bold** for emphasis, numbered lists (1. 2. 3.) for steps, bullet lists for options. Do NOT use #### or image markdown. Use ## or ### at most.
+11. INSTALLATION GUIDES: When providing installation instructions, ALWAYS show the full steps inline in your response. NEVER just say "visit the product page." Include: difficulty level, estimated time, numbered step-by-step instructions, safety warning to disconnect power, and YouTube video link if available. The user is asking YOU — give them the complete answer here and now.
 8. DO NOT ASSUME: Each query should be treated independently. Do NOT assume the user is referring to a previously mentioned model or part unless they explicitly say "this part" or "that model". A dishwasher part IS a dishwasher part — do not say "this is not a refrigerator part" unless the user asked about refrigerators.
 9. PART IDENTITY: A part is what it is. PS972325 is a Dishwasher Door Balance Link Kit — present it as such. Do NOT add unnecessary commentary about what type of appliance it is NOT for.
 10. CORRECT RESPONSES: When a user asks "Tell me about PS972325", simply show the part details. Do not say "this is not a refrigerator part" — just show the product info.
@@ -101,6 +102,29 @@ export class AgentOrchestrator {
     // Step 3: Handle order support directly
     if (routing.intent === "order_support") {
       return this._handleOrderSupport(userQuery, memory);
+    }
+
+    // Handle "show all models" / "list models" queries
+    if (/\b(all models|list models|show models|what models|available models|supported models)\b/i.test(userQuery)) {
+      const db = this._getLocalDB();
+      const models = Object.values(db.models || {});
+      if (models.length > 0) {
+        const refModels = models.filter(m => m.type === "Refrigerator");
+        const dwModels = models.filter(m => m.type === "Dishwasher");
+        let content = `I have data for **${models.length} appliance models**:\n\n`;
+        if (refModels.length > 0) {
+          content += `**Refrigerator Models** (${refModels.length}):\n`;
+          refModels.forEach(m => { content += `- **${m.modelNumber}** (${m.brand}) — ${m.parts?.length || m.partNumbers?.length || 0} parts\n`; });
+          content += "\n";
+        }
+        if (dwModels.length > 0) {
+          content += `**Dishwasher Models** (${dwModels.length}):\n`;
+          dwModels.forEach(m => { content += `- **${m.modelNumber}** (${m.brand}) — ${m.parts?.length || m.partNumbers?.length || 0} parts\n`; });
+        }
+        content += `\nAsk me about any model for its compatible parts.`;
+        memory.addAssistantMessage(content);
+        return { content, cards: [], suggestions: models.slice(0, 3).map(m => `Show parts for ${m.modelNumber}`), toolsUsed: [], meta: { agent: "model-list" } };
+      }
     }
 
     // Handle cart view intent

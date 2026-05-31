@@ -36,11 +36,11 @@ function renderMd(text: string): string {
 
     if (olMatch) {
       const num = olMatch[1];
-      if (!inUl) { if (inOl) { processed.push("</ul>"); inOl = false; } processed.push("<ul>"); inUl = true; }
-      processed.push(`<li class="li-num"><span class="list-num">${num}.</span>${olMatch[2]}</li>`);
+      if (!inUl) { if (inOl) { processed.push("</ul>"); inOl = false; } processed.push("<ul style='list-style:none;padding:0;margin:.2rem 0'>"); inUl = true; }
+      processed.push(`<li style='display:flex;gap:.4rem;margin:.15rem 0;line-height:1.5'><span style='font-weight:700;color:#337778;min-width:1.2rem;flex-shrink:0'>${num}.</span><span>${olMatch[2]}</span></li>`);
     } else if (ulMatch) {
-      if (!inUl) { if (inOl) { processed.push("</ul>"); inOl = false; } processed.push("<ul>"); inUl = true; }
-      processed.push(`<li class="li-dot">${ulMatch[1]}</li>`);
+      if (!inUl) { if (inOl) { processed.push("</ul>"); inOl = false; } processed.push("<ul style='list-style:none;padding:0;margin:.2rem 0'>"); inUl = true; }
+      processed.push(`<li style='display:flex;gap:.4rem;margin:.15rem 0;line-height:1.5'><span style='font-weight:700;color:#337778;flex-shrink:0'>·</span><span>${ulMatch[1]}</span></li>`);
     } else {
       if (inOl) { processed.push("</ol>"); inOl = false; }
       if (inUl) { processed.push("</ul>"); inUl = false; }

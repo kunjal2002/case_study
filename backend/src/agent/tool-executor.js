@@ -51,6 +51,16 @@ export async function executeToolCall(toolName, args) {
   }
 }
 
+function buildInstallGuide(part) {
+  const lines = [];
+  if (part.description) lines.push(part.description);
+  if (part.repairStories?.length) {
+    lines.push("\n**Customer installation experiences:**");
+    part.repairStories.slice(0, 3).forEach(s => lines.push(`> ${s.slice(0, 200)}`));
+  }
+  return lines.join("\n") || "";
+}
+
 async function handleSearchPart({ partNumber }) {
   const normalized = partNumber.toUpperCase().replace(/[^A-Z0-9]/g, "");
 
@@ -208,39 +218,51 @@ async function handleGetInstallation({ partNumber }) {
   const db = getDB();
   const normalized = partNumber.toUpperCase().replace(/[^A-Z0-9]/g, "");
 
-  // Local DB
+  // Always try live scraping first to get the most complete installation data
+  // (includes real repair stories and video URLs from PartSelect)
+  try {
+    const liveResult = await fetchPartByNumber(partNumber);
+    if (liveResult && liveResult.title) {
+      const localPart = db.parts[normalized] || {};
+      return {
+        partNumber: liveResult.partSelectNumber || liveResult.partNumber || normalized,
+        title: liveResult.title,
+        description: liveResult.description || localPart.description || "",
+        installationGuide: buildInstallGuide(liveResult),
+        installSteps: localPart.installSteps || [],
+        installDifficulty: liveResult.installDifficulty || localPart.installDifficulty || "Easy",
+        repairTime: liveResult.repairTime || localPart.repairTime || "15-30 mins",
+        repairStories: liveResult.repairStories || [],
+        price: liveResult.price,
+        inStock: liveResult.inStock,
+        url: liveResult.url,
+        installVideoUrl: liveResult.installVideoUrl || localPart.installVideoUrl || "",
+        videoUrls: liveResult.videoUrls || [],
+        source: "partselect-live",
+      };
+    }
+  } catch {}
+
+  // Local DB fallback
   const localPart = db.parts[normalized];
   if (localPart) {
     return {
       partNumber: localPart.partSelectNumber || normalized,
       title: localPart.title,
-      installationGuide:
-        localPart.description || "Visit the product page for detailed installation instructions.",
+      description: localPart.description || "",
+      installationGuide: localPart.description || "",
+      installSteps: localPart.installSteps || [],
+      installDifficulty: localPart.installDifficulty || "Easy",
+      repairTime: localPart.repairTime || "15-30 mins",
       repairStories: localPart.repairStories || [],
       price: localPart.price,
       inStock: localPart.inStock,
       url: localPart.url,
+      installVideoUrl: localPart.installVideoUrl || "",
       videoUrls: localPart.videoUrls || [],
       source: "local-database",
     };
   }
-
-  // Live scraping
-  try {
-    const liveResult = await fetchPartByNumber(partNumber);
-    if (liveResult) {
-      return {
-        partNumber: liveResult.partNumber || normalized,
-        title: liveResult.title,
-        installationGuide: liveResult.installationGuide || liveResult.description || "",
-        repairStories: liveResult.repairStories || [],
-        price: liveResult.price,
-        inStock: liveResult.inStock,
-        url: liveResult.url,
-        source: "partselect-live",
-      };
-    }
-  } catch {}
 
   // KB fallback
   const kbResult = productKnowledgeBase.getByPartNumber(partNumber);
@@ -303,6 +325,40 @@ async function handleTroubleshoot({ symptom, applianceType, modelNumber }) {
 }
 
 async function handleSearchByKeyword({ keyword, applianceType }) {
+  const db = getDB();
+  const lowerKeyword = (keyword || "").toLowerCase().trim();
+
+  // If keyword IS just the appliance type name, return all parts of that type
+  const isGenericBrowse = applianceType && (
+    lowerKeyword === applianceType ||
+    lowerKeyword === "parts" ||
+    lowerKeyword === applianceType + " parts" ||
+    lowerKeyword === "all " + applianceType + " parts" ||
+    lowerKeyword === "" ||
+    lowerKeyword === "all parts"
+  );
+
+  if (isGenericBrowse) {
+    const allTypeParts = Object.values(db.parts)
+      .filter(p => p.applianceType === applianceType)
+      .slice(0, 8)
+      .map(p => ({
+        partNumber: p.partSelectNumber || p.partNumber,
+        title: p.title,
+        price: p.price,
+        inStock: p.inStock,
+        url: p.url,
+        description: (p.description || "").slice(0, 150),
+      }));
+    return {
+      keyword,
+      applianceType,
+      parts: allTypeParts,
+      totalFound: allTypeParts.length,
+      source: "local-database-browse",
+    };
+  }
+
   // Semantic search from vector store
   let semanticResults = [];
   try {
@@ -312,19 +368,11 @@ async function handleSearchByKeyword({ keyword, applianceType }) {
     });
   } catch {}
 
-  // Live PartSelect search
-  let liveResults = { parts: [] };
-  try {
-    liveResults = await searchPartsByKeyword(keyword, applianceType);
-  } catch {}
-
   // Local DB keyword match
-  const db = getDB();
   const localMatches = [];
-  const lowerKeyword = keyword.toLowerCase();
   for (const [pn, data] of Object.entries(db.parts)) {
     if (applianceType && data.applianceType !== applianceType) continue;
-    const searchText = `${data.title} ${data.description} ${data.symptoms?.join(" ")}`.toLowerCase();
+    const searchText = `${data.title} ${data.description || ""} ${(data.symptoms || []).join(" ")}`.toLowerCase();
     if (searchText.includes(lowerKeyword)) {
       localMatches.push({
         partNumber: pn,
@@ -335,6 +383,14 @@ async function handleSearchByKeyword({ keyword, applianceType }) {
         description: (data.description || "").slice(0, 150),
       });
     }
+  }
+
+  // Only try live search if local has very few results (avoid timeouts)
+  let liveResults = { parts: [] };
+  if (localMatches.length < 3 && semanticResults.length < 3) {
+    try {
+      liveResults = await searchPartsByKeyword(keyword, applianceType);
+    } catch {}
   }
 
   // Merge and deduplicate

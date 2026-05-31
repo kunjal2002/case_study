@@ -1,0 +1,15 @@
+node_modules/
+.next/
+.env
+.env.local
+*.log
+.DS_Store
+logs/
+backend/src/data/products.json
+backend/src/data/embeddings.json
+backend/logs/
+frontend/.next/
+frontend/out/
+frontend/build/
+aritra_backend/
+Instalily/

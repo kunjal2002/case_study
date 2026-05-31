@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PartSelect.com - with AI Chat Widget</title>
+  <style>
+    /* Simulate PartSelect's page */
+    body { margin: 0; font-family: Helvetica, Arial, sans-serif; background: #f5f5f5; }
+    .ps-header { background: #337778; border-bottom: 3px solid #f3c04c; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+    .ps-header h1 { color: white; font-size: 20px; margin: 0; }
+    .ps-header nav a { color: white; text-decoration: none; margin-left: 20px; font-size: 14px; opacity: 0.8; }
+    .ps-content { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+    .ps-content h2 { color: #337778; }
+    .ps-content p { color: #555; line-height: 1.6; }
+    .ps-card { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 15px 0; }
+
+    /* Chat widget bubble - bottom right */
+    #ps-chat-bubble {
+      position: fixed; bottom: 24px; right: 24px; z-index: 9999;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #337778; color: white; border: none;
+      cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    #ps-chat-bubble:hover { transform: scale(1.08); box-shadow: 0 6px 20px rgba(0,0,0,0.25); }
+
+    /* Chat widget iframe */
+    #ps-chat-frame {
+      position: fixed; bottom: 90px; right: 24px; z-index: 9998;
+      width: 400px; height: 600px; max-height: 80vh;
+      border: 1px solid #ddd; border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+      display: none; overflow: hidden; background: white;
+    }
+    #ps-chat-frame.open { display: block; }
+    #ps-chat-frame iframe { width: 100%; height: 100%; border: none; border-radius: 12px; }
+  </style>
+</head>
+<body>
+  <!-- Simulated PartSelect page content -->
+  <div class="ps-header">
+    <h1>PartSelect</h1>
+    <nav>
+      <a href="#">Refrigerator Parts</a>
+      <a href="#">Dishwasher Parts</a>
+      <a href="#">Help</a>
+    </nav>
+  </div>
+
+  <div class="ps-content">
+    <h2>Welcome to PartSelect</h2>
+    <p>Find genuine OEM replacement parts for your refrigerator and dishwasher.</p>
+
+    <div class="ps-card">
+      <h3>AI Chat Widget Integration Demo</h3>
+      <p>Click the chat bubble in the bottom-right corner to open the AI assistant. This demonstrates how the chat agent integrates seamlessly with the PartSelect website.</p>
+      <p>The widget is loaded as an <code>&lt;iframe&gt;</code> pointing to the Next.js chat app. In production, this would be embedded via a single <code>&lt;script&gt;</code> tag.</p>
+    </div>
+
+    <div class="ps-card">
+      <h3>Integration Code</h3>
+      <pre style="background:#f0f0f0;padding:12px;border-radius:6px;font-size:13px;overflow-x:auto">&lt;!-- Add to any page on partselect.com --&gt;
+&lt;script src="https://your-domain.com/chat-widget.js"&gt;&lt;/script&gt;</pre>
+    </div>
+  </div>
+
+  <!-- Chat bubble button -->
+  <button id="ps-chat-bubble" onclick="toggleChat()" aria-label="Open AI Chat">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+  </button>
+
+  <!-- Chat iframe -->
+  <div id="ps-chat-frame">
+    <iframe src="http://localhost:3000" title="PartSelect AI Chat"></iframe>
+  </div>
+
+  <script>
+    function toggleChat() {
+      const frame = document.getElementById('ps-chat-frame');
+      frame.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: partselect-chat-api
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run seed
+    startCommand: node src/server.js
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: PORT
+        value: 4000
+      - key: NODE_ENV
+        value: production

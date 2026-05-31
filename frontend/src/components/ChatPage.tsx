@@ -8,6 +8,8 @@ import { ProductCardGrid } from "./ProductCardGrid";
 import { SuggestionChips } from "./SuggestionChips";
 import { ToolBadges } from "./ToolBadges";
 import { HeroSuggestions } from "./HeroSuggestions";
+import { FeedbackButtons } from "./FeedbackButtons";
+import { StatusIndicator } from "./StatusIndicator";
 
 const WELCOME: ChatMessage = {
   role: "assistant",
@@ -22,7 +24,7 @@ export function ChatPage() {
   const [sendDisabled, setSendDisabled] = useState(true);
   const [sessionId] = useState(() => `s_${Date.now()}`);
   const endRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => { endRef.current?.scrollIntoView({ behavior: "smooth" }); }, [messages, isLoading]);
 
@@ -58,7 +60,11 @@ export function ChatPage() {
     if (inputRef.current) {
       inputRef.current.value = text;
       inputRef.current.focus();
+      // Move cursor to end
       inputRef.current.setSelectionRange(text.length, text.length);
+      // Resize to fit content
+      inputRef.current.style.height = "auto";
+      inputRef.current.style.height = Math.min(inputRef.current.scrollHeight, 120) + "px";
       setSendDisabled(false);
     }
   };
@@ -84,13 +90,7 @@ export function ChatPage() {
             <span style={{ color: "var(--ps-border)" }}>|</span>
             <span>Dishwashers</span>
           </div>
-            <div className="flex items-center gap-1.5 text-[11px]" style={{ color: "var(--ps-text-muted)" }}>
-              <span className="relative flex h-2 w-2">
-                <span className="absolute h-full w-full animate-ping rounded-full opacity-40" style={{ background: "var(--ps-green)" }} />
-                <span className="relative h-2 w-2 rounded-full" style={{ background: "var(--ps-green)" }} />
-              </span>
-              Live
-            </div>
+            <StatusIndicator />
           </div>
         </div>
       </div>
@@ -115,6 +115,12 @@ export function ChatPage() {
                 {msg.suggestions && msg.suggestions.length > 0 && (
                   <div className="ml-9 mt-2">
                     <SuggestionChips suggestions={msg.suggestions} onSelect={send} disabled={isLoading} />
+                  </div>
+                )}
+                {/* Feedback for assistant messages (not welcome) */}
+                {msg.role === "assistant" && i > 0 && (
+                  <div className="ml-9 mt-1">
+                    <FeedbackButtons sessionId={sessionId} messageIndex={i} query={messages[i - 1]?.content} />
                   </div>
                 )}
               </div>
@@ -146,14 +152,29 @@ export function ChatPage() {
 
           {/* Input bar */}
           <div className="border-t px-4 py-2.5" style={{ borderColor: "var(--ps-border)", background: "#fafafa" }}>
-            <div className="flex items-center gap-2">
-              <input ref={inputRef}
-                onChange={() => setSendDisabled(!getVal())}
-                onKeyDown={e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); } }}
+            <div className="flex items-end gap-2">
+              <textarea ref={inputRef}
+                rows={1}
+                onChange={() => {
+                  setSendDisabled(!getVal());
+                  if (inputRef.current) {
+                    inputRef.current.style.height = "auto";
+                    inputRef.current.style.height = Math.min(inputRef.current.scrollHeight, 120) + "px";
+                  }
+                }}
+                onKeyDown={e => {
+                  if (e.key === "Enter" && !e.shiftKey) {
+                    e.preventDefault();
+                    send();
+                    setTimeout(() => {
+                      if (inputRef.current) inputRef.current.style.height = "auto";
+                    }, 10);
+                  }
+                }}
                 placeholder="Ask about parts, compatibility, installation…"
                 disabled={isLoading} autoFocus
-                className="flex-1 rounded border px-3 py-2 text-sm bg-white outline-none transition-colors"
-                style={{ borderColor: "var(--ps-border)", color: "var(--ps-text)" }}
+                className="flex-1 rounded border px-3 py-2 text-sm bg-white outline-none transition-colors resize-none overflow-hidden"
+                style={{ borderColor: "var(--ps-border)", color: "var(--ps-text)", lineHeight: "1.5" }}
                 onFocus={e => e.currentTarget.style.borderColor = "var(--ps-header)"}
                 onBlur={e => e.currentTarget.style.borderColor = "var(--ps-border)"}
               />
@@ -166,11 +187,12 @@ export function ChatPage() {
                 </svg>
               </button>
             </div>
-            <p className="mt-1 text-center text-[10px]" style={{ color: "var(--ps-text-muted)" }}>
-              Genuine OEM parts ·{" "}
+            <div className="mt-1 text-center text-[10px]" style={{ color: "var(--ps-text-muted)" }}>
               <a href="https://www.partselect.com" target="_blank" rel="noopener noreferrer"
                 style={{ color: "var(--ps-link)" }} className="hover:underline">partselect.com</a>
-            </p>
+              <span className="mx-2">·</span>
+              <span>Enter to send · Shift+Enter for new line</span>
+            </div>
           </div>
         </div>
       </main>

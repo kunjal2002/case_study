@@ -241,60 +241,89 @@ npm test
 
 ## Deployment
 
-### Option 1: Local Development
+### Option 1 — Local Development (Recommended for demo)
+
 ```bash
-# Terminal 1 — Backend
+# ── BACKEND ──────────────────────────────────
 cd backend
 npm install
+
+# Get a FREE Gemini API key (30 seconds, no credit card):
+# https://aistudio.google.com/apikey
+# OR use OpenAI: https://platform.openai.com/api-keys
+
 cp .env.example .env
-# Add OPENAI_API_KEY=sk-... to .env
-npm run import-data   # Import 1,600+ real PartSelect products
-npm run dev           # → http://localhost:4000
+# Edit .env and add your key:
+#   GEMINI_API_KEY=your-key      ← free, 1500 req/day
+#   OPENAI_API_KEY=sk-...        ← paid, never rate-limited
 
-# Terminal 2 — Frontend
-cd frontend
+npm run import-data   # Load 1,600+ real PartSelect products (5 sec)
+npm run dev           # Starts on http://localhost:4000
+
+# ── FRONTEND ─────────────────────────────────
+cd frontend          # open a second terminal
 npm install
-npm run dev           # → http://localhost:3000
+npm run dev           # Starts on http://localhost:3000
 ```
 
-### Option 2: Production (Vercel + Render)
+Open **http://localhost:3000** — the chat is live.
 
-**Frontend → Vercel (free)**
-```bash
-cd frontend
-npx vercel
-# Set env var: NEXT_PUBLIC_API_URL=https://your-backend.onrender.com
-```
+### Option 2 — Cloud: Vercel + Render (free tier)
 
-**Backend → Render (free)**
-1. Push to GitHub at github.com/kunjal2002/case_study
-2. Create new Web Service on [render.com](https://render.com)
-3. Set **Build Command**: `npm install && npm run import-data`
-4. Set **Start Command**: `node src/server.js`
-5. Add env vars: `OPENAI_API_KEY=sk-...` and `PORT=4000`
+**Step 1: Deploy backend to Render**
+1. Push to GitHub: `git push origin main`
+2. Go to [render.com](https://render.com) → New Web Service → connect your repo
+3. Select the `backend/` folder as root
+4. Set **Build Command**: `npm install && npm run import-data`
+5. Set **Start Command**: `node src/server.js`
+6. Add environment variables:
+   - `OPENAI_API_KEY` = your key
+   - `PORT` = 4000
+7. Deploy — copy the service URL (e.g. `https://partselect-api.onrender.com`)
 
-### Option 3: Docker
+**Step 2: Deploy frontend to Vercel**
+1. Go to [vercel.com](https://vercel.com) → New Project → import your repo
+2. Set **Root Directory** to `frontend`
+3. Add environment variable:
+   - `NEXT_PUBLIC_API_URL` = your Render backend URL
+4. Deploy — get your live URL
+
+### Option 3 — Docker
+
 ```bash
 cd backend
 docker build -t partselect-api .
-docker run -p 4000:4000 -e OPENAI_API_KEY=sk-... partselect-api
+docker run -p 4000:4000 \
+  -e OPENAI_API_KEY=sk-... \
+  -e NODE_ENV=production \
+  partselect-api
 ```
 
-### Option 4: PM2 (Process Manager)
+### Option 4 — PM2 (Production Process Manager)
+
 ```bash
+# Backend
+cd backend
+npm install && npm run import-data
 npm install -g pm2
-cd backend && pm2 start src/server.js --name partselect-api
-cd frontend && npm run build && pm2 start npm --name partselect-ui -- start
-```
-4. Set **Start Command**: `node src/server.js`
-5. Add env var: `GEMINI_API_KEY=your-key`
+pm2 start src/server.js --name partselect-api --env production
 
-Alternatively, use the included `Dockerfile`:
-```bash
-cd backend
-docker build -t partselect-api .
-docker run -p 4000:4000 -e GEMINI_API_KEY=your-key partselect-api
+# Frontend
+cd frontend
+npm run build
+pm2 start npm --name partselect-ui -- start
+pm2 save
 ```
+
+### Environment Variables
+
+| Variable | Required | Description |
+|---|---|---|
+| `OPENAI_API_KEY` | One of these | Best for demos — paid, never rate-limited |
+| `GEMINI_API_KEY` | One of these | Free tier, 1500 req/day |
+| `OLLAMA_HOST` | Optional | Local LLM (e.g. http://localhost:11434) |
+| `PORT` | Optional | Backend port (default: 4000) |
+| `NEXT_PUBLIC_API_URL` | Frontend only | Backend URL in production |
 
 ---
 

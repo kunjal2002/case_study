@@ -84,10 +84,22 @@ function run() {
     // Don't overwrite existing seed data which has richer info
     if (db.parts[psNumber]) { skipped++; continue; }
 
+    // Clean title: remove leading brand names that CSV prepends
+    // e.g. "Amana Dishwasher Lower Dishrack Wheel" → "Lower Dishrack Wheel"
+    // e.g. "Admiral Dishwasher Rack Track Stop" → "Dishwasher Rack Track Stop"
+    const BRANDS = ["Amana","Admiral","Whirlpool","KitchenAid","Maytag","Roper","Estate","Kenmore","Jenn-Air","Magic Chef","Inglis","Caloric","Gibson","Crosley","Norge","Kelvinator","Hotpoint","General Electric","Speed Queen"];
+    let cleanTitle = (row.part_name || psNumber).trim();
+    for (const brand of BRANDS) {
+      if (cleanTitle.startsWith(brand + " ") && cleanTitle.length > brand.length + 10) {
+        cleanTitle = cleanTitle.slice(brand.length + 1).trim();
+        break;
+      }
+    }
+
     db.parts[psNumber] = {
       partSelectNumber: psNumber,
       manufacturerPartNumber: row.mpn_id || "",
-      title: row.part_name || psNumber,
+      title: cleanTitle,
       description: "",
       price: row.part_price ? parseFloat(row.part_price) : null,
       inStock: (row.availability || "").includes("In Stock"),

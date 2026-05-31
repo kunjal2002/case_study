@@ -7,7 +7,8 @@ RUN npm ci --omit=dev
 
 COPY src/ ./src/
 
-RUN node src/data/seed-db.js
+# Import 1,600+ real PartSelect products from CSV
+RUN node src/data/import-csv.js
 
 ENV PORT=4000
 EXPOSE 4000

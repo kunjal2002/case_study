@@ -35,13 +35,12 @@ function renderMd(text: string): string {
     const ulMatch = line.match(/^[-•]\s+(.+)$/);
 
     if (olMatch) {
-      // Render numbered items as styled bullets (avoids browser list-style issues)
       const num = olMatch[1];
       if (!inUl) { if (inOl) { processed.push("</ul>"); inOl = false; } processed.push("<ul>"); inUl = true; }
-      processed.push(`<li><span class="list-num">${num}.</span> ${olMatch[2]}</li>`);
+      processed.push(`<li class="li-num"><span class="list-num">${num}.</span>${olMatch[2]}</li>`);
     } else if (ulMatch) {
-      if (!inUl) { if (inOl) { processed.push("</ol>"); inOl = false; } processed.push("<ul>"); inUl = true; }
-      processed.push(`<li>${ulMatch[1]}</li>`);
+      if (!inUl) { if (inOl) { processed.push("</ul>"); inOl = false; } processed.push("<ul>"); inUl = true; }
+      processed.push(`<li class="li-dot">${ulMatch[1]}</li>`);
     } else {
       if (inOl) { processed.push("</ol>"); inOl = false; }
       if (inUl) { processed.push("</ul>"); inUl = false; }

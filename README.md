@@ -234,24 +234,58 @@ npm run scrape:playwright
 ```bash
 cd backend
 npm test
-# → 31 tests passing
+# → 41 tests passing (21 router + 9 KB + 11 integration)
 ```
 
 ---
 
-## Deployment (Free)
+## Deployment
 
-### Frontend → Vercel (free)
+### Option 1: Local Development
+```bash
+# Terminal 1 — Backend
+cd backend
+npm install
+cp .env.example .env
+# Add OPENAI_API_KEY=sk-... to .env
+npm run import-data   # Import 1,600+ real PartSelect products
+npm run dev           # → http://localhost:4000
+
+# Terminal 2 — Frontend
+cd frontend
+npm install
+npm run dev           # → http://localhost:3000
+```
+
+### Option 2: Production (Vercel + Render)
+
+**Frontend → Vercel (free)**
 ```bash
 cd frontend
 npx vercel
-# Set NEXT_PUBLIC_API_URL to your backend URL
+# Set env var: NEXT_PUBLIC_API_URL=https://your-backend.onrender.com
 ```
 
-### Backend → Render (free)
-1. Push to GitHub
-2. Connect repo on [render.com](https://render.com)
-3. Set **Build Command**: `npm install && npm run seed`
+**Backend → Render (free)**
+1. Push to GitHub at github.com/kunjal2002/case_study
+2. Create new Web Service on [render.com](https://render.com)
+3. Set **Build Command**: `npm install && npm run import-data`
+4. Set **Start Command**: `node src/server.js`
+5. Add env vars: `OPENAI_API_KEY=sk-...` and `PORT=4000`
+
+### Option 3: Docker
+```bash
+cd backend
+docker build -t partselect-api .
+docker run -p 4000:4000 -e OPENAI_API_KEY=sk-... partselect-api
+```
+
+### Option 4: PM2 (Process Manager)
+```bash
+npm install -g pm2
+cd backend && pm2 start src/server.js --name partselect-api
+cd frontend && npm run build && pm2 start npm --name partselect-ui -- start
+```
 4. Set **Start Command**: `node src/server.js`
 5. Add env var: `GEMINI_API_KEY=your-key`
 

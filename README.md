@@ -403,13 +403,23 @@ pm2 save
 
 ## Extensibility
 
-1. **Add appliance types** — extend router patterns + knowledge base
-2. **Production vector DB** — swap for Pinecone/Weaviate/ChromaDB
-3. **Real database** — replace products.json with PostgreSQL
-4. **Redis sessions** — swap in-memory Map for Redis
-5. **Order integration** — connect real OMS API as a new tool
-6. **Image search** — add vision model for appliance photos
-7. **Multi-language** — localize system prompt
-8. **Analytics** — track tool usage, response quality
-9. **A/B testing** — route between LLM providers/prompts
-10. **MCP integration** — expose tools via Model Context Protocol
+The architecture is designed so each layer can be upgraded independently:
+
+| Component | Current | Production Upgrade |
+|---|---|---|
+| **Database** | `products.json` (1,628 parts) | PostgreSQL / MongoDB |
+| **Vector search** | In-process embeddings | Pinecone / Weaviate / ChromaDB |
+| **Session cache** | In-memory Map | Redis |
+| **LLM** | OpenAI / Gemini / Ollama | Any via `LLMProvider` interface |
+| **Observability** | Winston logs | LangSmith / OpenTelemetry / Datadog |
+| **Tool protocol** | OpenAI function calling | MCP (Model Context Protocol) |
+| **Scraping** | Cheerio + Playwright | Apify / Browserless cloud |
+| **Agent framework** | Custom ReAct loop | LangGraph / ADK if needed |
+
+**MCP Integration:** Our 7 tool definitions (`search_part`, `check_compatibility`, etc.) follow the same schema as MCP tool descriptors — converting to MCP servers would require minimal changes. This allows any MCP-compatible client (Claude Desktop, other AI agents) to use our PartSelect tools.
+
+**Specialist agents:** The Router Agent currently routes to the Orchestrator which handles all intents. Splitting into specialist agents (Compatibility Agent, Troubleshooting Agent, Order Agent) is a one-line change — replace the single orchestrator with intent-specific orchestrators each with a focused system prompt and subset of tools.
+
+**Observability:** The Winston logger already outputs structured JSON. Adding LangSmith traces requires only wrapping the `chatCompletion()` call. OpenTelemetry spans can be added at the middleware layer.
+
+**Analytics:** The `/api/feedback` endpoint already collects 👍/👎 per message. Extending to track tool usage, latency, and accuracy requires adding metrics to the existing response format.

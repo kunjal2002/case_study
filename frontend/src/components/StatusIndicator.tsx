@@ -9,14 +9,15 @@ export function StatusIndicator() {
   useEffect(() => {
     const check = async () => {
       try {
-        const r = await fetch(`${API}/health`, { signal: AbortSignal.timeout(3000) });
+        // Use 20s timeout to handle Render free-tier cold starts (can take 10-30s)
+        const r = await fetch(`${API}/health`, { signal: AbortSignal.timeout(20000) });
         setStatus(r.ok ? "online" : "offline");
       } catch {
         setStatus("offline");
       }
     };
     check();
-    const interval = setInterval(check, 30000);
+    const interval = setInterval(check, 60000);
     return () => clearInterval(interval);
   }, []);
 

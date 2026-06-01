@@ -45,10 +45,13 @@ export function ChatPage() {
         suggestions: res.suggestions, toolsUsed: res.toolsUsed,
         meta: res.meta, timestamp: Date.now(),
       }]);
-    } catch {
+    } catch (err) {
+      const isTimeout = err instanceof Error && (err.message.includes("timeout") || err.message.includes("fetch"));
       setMessages(p => [...p, {
         role: "assistant",
-        content: "I had trouble with that request. Please try again.",
+        content: isTimeout
+          ? "The server is waking up (it may take up to 30 seconds on first load). Please **try again in a moment**."
+          : "I had trouble with that request. Please try again.",
         suggestions: ["Show parts for WDT780SAEM1", "My fridge ice maker isn't working"],
       }]);
     }

@@ -10,6 +10,7 @@ export async function sendMessage(
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ query, sessionId }),
+    signal: AbortSignal.timeout(35000), // 35s to handle Render cold starts
   });
 
   if (!res.ok) {

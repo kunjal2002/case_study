@@ -7,8 +7,8 @@ RUN npm ci --omit=dev
 
 COPY src/ ./src/
 
-# Import 1,600+ real PartSelect products from CSV
-RUN node src/data/import-csv.js
+# products.json is committed to the repo — no scraping needed at build time
+# If missing, import-data will auto-run on first server start
 
 ENV PORT=4000
 EXPOSE 4000

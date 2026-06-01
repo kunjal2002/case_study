@@ -5,7 +5,6 @@ node_modules/
 *.log
 .DS_Store
 logs/
-backend/src/data/products.json
 backend/src/data/embeddings.json
 backend/logs/
 frontend/.next/

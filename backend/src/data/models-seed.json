@@ -1,0 +1,1286 @@
+{
+  "WDT780SAEM1": {
+    "modelNumber": "WDT780SAEM1",
+    "brand": "KitchenAid/Whirlpool",
+    "type": "Dishwasher",
+    "partNumbers": [
+      "PS3406971",
+      "PS10065979",
+      "PS11746591",
+      "PS11745496",
+      "PS11750093",
+      "PS12348515",
+      "PS11753379",
+      "PS11750092",
+      "PS11755592",
+      "PS11755736",
+      "PS11759673"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS3406971",
+        "title": "Lower Dishrack Wheel",
+        "price": null,
+        "url": "https://www.partselect.com/PS3406971-Whirlpool-W10195416-Lower-Dishrack-Wheel.htm?SourceCode=21&SearchTerm=WDT780SAEM1&ModelNum=WDT780SAEM1",
+        "fitment": "Compatible with WDT780SAEM1"
+      },
+      {
+        "partNumber": "PS10065979",
+        "title": "Upper Rack Adjuster Kit - White Wheels, Left and Right Sides",
+        "price": null,
+        "url": "https://www.partselect.com/PS10065979-Whirlpool-W10712395-Upper-Rack-Adjuster-Kit-White-Wheels-Left-and-Right-Sides.htm?SourceCode=21&SearchTerm=WDT780SAEM1&ModelNum=WDT780SAEM1",
+        "fitment": "Compatible with WDT780SAEM1"
+      },
+      {
+        "partNumber": "PS11746591",
+        "title": "Dishwasher Rack Track Stop",
+        "price": null,
+        "url": "https://www.partselect.com/PS11746591-Whirlpool-WP8565925-Dishwasher-Rack-Track-Stop.htm?SourceCode=21&SearchTerm=WDT780SAEM1&ModelNum=WDT780SAEM1",
+        "fitment": "Compatible with WDT780SAEM1"
+      },
+      {
+        "partNumber": "PS11745496",
+        "title": "Dishwasher Mounting Bracket",
+        "price": null,
+        "url": "https://www.partselect.com/PS11745496-Whirlpool-WP8269145-Dishwasher-Mounting-Bracket.htm?SourceCode=21&SearchTerm=WDT780SAEM1&ModelNum=WDT780SAEM1",
+        "fitment": "Compatible with WDT780SAEM1"
+      },
+      {
+        "partNumber": "PS11750093",
+        "title": "Dishwasher Positioner",
+        "price": null,
+        "url": "https://www.partselect.com/PS11750093-Whirlpool-WPW10195840-Dishwasher-Positioner.htm?SourceCode=21&SearchTerm=WDT780SAEM1&ModelNum=WDT780SAEM1",
+        "fitment": "Compatible with WDT780SAEM1"
+      },
+      {
+        "partNumber": "PS12348515",
+        "title": "Dishwasher Door Seal",
+        "price": null,
+        "url": "https://www.partselect.com/PS12348515-Whirlpool-W11177741-Dishwasher-Door-Seal.htm?SourceCode=21&SearchTerm=WDT780SAEM1&ModelNum=WDT780SAEM1",
+        "fitment": "Compatible with WDT780SAEM1"
+      },
+      {
+        "partNumber": "PS11753379",
+        "title": "Dishwasher Drain Pump",
+        "price": null,
+        "url": "https://www.partselect.com/PS11753379-Whirlpool-WPW10348269-Dishwasher-Drain-Pump.htm?SourceCode=21&SearchTerm=WDT780SAEM1&ModelNum=WDT780SAEM1",
+        "fitment": "Compatible with WDT780SAEM1"
+      },
+      {
+        "partNumber": "PS11750092",
+        "title": "Dishwasher Dishrack Adjuster",
+        "price": null,
+        "url": "https://www.partselect.com/PS11750092-Whirlpool-WPW10195839-Dishwasher-Dishrack-Adjuster.htm?SourceCode=21&SearchTerm=WDT780SAEM1&ModelNum=WDT780SAEM1",
+        "fitment": "Compatible with WDT780SAEM1"
+      },
+      {
+        "partNumber": "PS11755592",
+        "title": "Dishwasher Lower Spray Arm",
+        "price": null,
+        "url": "https://www.partselect.com/PS11755592-Whirlpool-WPW10491331-Dishwasher-Lower-Spray-Arm.htm?SourceCode=21&SearchTerm=WDT780SAEM1&ModelNum=WDT780SAEM1",
+        "fitment": "Compatible with WDT780SAEM1"
+      },
+      {
+        "partNumber": "PS11755736",
+        "title": "Dishwasher Retainer Clip",
+        "price": null,
+        "url": "https://www.partselect.com/PS11755736-Whirlpool-WPW10503548-Dishwasher-Retainer-Clip.htm?SourceCode=21&SearchTerm=WDT780SAEM1&ModelNum=WDT780SAEM1",
+        "fitment": "Compatible with WDT780SAEM1"
+      },
+      {
+        "partNumber": "PS11759673",
+        "title": "Dishwasher Filter",
+        "price": null,
+        "url": "https://www.partselect.com/PS11759673-Whirlpool-W10872845-Dishwasher-Filter.htm?SourceCode=21&SearchTerm=WDT780SAEM1&ModelNum=WDT780SAEM1",
+        "fitment": "Compatible with WDT780SAEM1"
+      }
+    ],
+    "scrapedAt": "2026-05-31T22:06:01.304Z"
+  },
+  "KDTM354DSS4": {
+    "modelNumber": "KDTM354DSS4",
+    "brand": "KitchenAid/Whirlpool",
+    "type": "Dishwasher",
+    "partNumbers": [
+      "PS11756150",
+      "PS11750057",
+      "PS11745496",
+      "PS11748190",
+      "PS11750093",
+      "PS12348515",
+      "PS12584376",
+      "PS11750092",
+      "PS12584377",
+      "PS10057161",
+      "PS9494999"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS11756150",
+        "title": "Dishwasher Upper Rack Adjuster",
+        "price": null,
+        "url": "https://www.partselect.com/PS11756150-Whirlpool-WPW10546503-Dishwasher-Upper-Rack-Adjuster.htm?SourceCode=21&SearchTerm=KDTM354DSS4&ModelNum=KDTM354DSS4",
+        "fitment": "Compatible with KDTM354DSS4"
+      },
+      {
+        "partNumber": "PS11750057",
+        "title": "Lower Dishrack Wheel Assembly",
+        "price": null,
+        "url": "https://www.partselect.com/PS11750057-Whirlpool-WPW10195417-Lower-Dishrack-Wheel-Assembly.htm?SourceCode=21&SearchTerm=KDTM354DSS4&ModelNum=KDTM354DSS4",
+        "fitment": "Compatible with KDTM354DSS4"
+      },
+      {
+        "partNumber": "PS11745496",
+        "title": "Dishwasher Mounting Bracket",
+        "price": null,
+        "url": "https://www.partselect.com/PS11745496-Whirlpool-WP8269145-Dishwasher-Mounting-Bracket.htm?SourceCode=21&SearchTerm=KDTM354DSS4&ModelNum=KDTM354DSS4",
+        "fitment": "Compatible with KDTM354DSS4"
+      },
+      {
+        "partNumber": "PS11748190",
+        "title": "Dishwasher Tine Pivot",
+        "price": null,
+        "url": "https://www.partselect.com/PS11748190-Whirlpool-WPW10082853-Dishwasher-Tine-Pivot.htm?SourceCode=21&SearchTerm=KDTM354DSS4&ModelNum=KDTM354DSS4",
+        "fitment": "Compatible with KDTM354DSS4"
+      },
+      {
+        "partNumber": "PS11750093",
+        "title": "Dishwasher Positioner",
+        "price": null,
+        "url": "https://www.partselect.com/PS11750093-Whirlpool-WPW10195840-Dishwasher-Positioner.htm?SourceCode=21&SearchTerm=KDTM354DSS4&ModelNum=KDTM354DSS4",
+        "fitment": "Compatible with KDTM354DSS4"
+      },
+      {
+        "partNumber": "PS12348515",
+        "title": "Dishwasher Door Seal",
+        "price": null,
+        "url": "https://www.partselect.com/PS12348515-Whirlpool-W11177741-Dishwasher-Door-Seal.htm?SourceCode=21&SearchTerm=KDTM354DSS4&ModelNum=KDTM354DSS4",
+        "fitment": "Compatible with KDTM354DSS4"
+      },
+      {
+        "partNumber": "PS12584376",
+        "title": "Dishwasher Dish Rack Slide Track - Left Side",
+        "price": null,
+        "url": "https://www.partselect.com/PS12584376-Whirlpool-W11259785-Dishwasher-Dish-Rack-Slide-Track-Left-Side.htm?SourceCode=21&SearchTerm=KDTM354DSS4&ModelNum=KDTM354DSS4",
+        "fitment": "Compatible with KDTM354DSS4"
+      },
+      {
+        "partNumber": "PS11750092",
+        "title": "Dishwasher Dishrack Adjuster",
+        "price": null,
+        "url": "https://www.partselect.com/PS11750092-Whirlpool-WPW10195839-Dishwasher-Dishrack-Adjuster.htm?SourceCode=21&SearchTerm=KDTM354DSS4&ModelNum=KDTM354DSS4",
+        "fitment": "Compatible with KDTM354DSS4"
+      },
+      {
+        "partNumber": "PS12584377",
+        "title": "Dishwasher Dish Rack Slide Track - Right Side",
+        "price": null,
+        "url": "https://www.partselect.com/PS12584377-Whirlpool-W11259786-Dishwasher-Dish-Rack-Slide-Track-Right-Side.htm?SourceCode=21&SearchTerm=KDTM354DSS4&ModelNum=KDTM354DSS4",
+        "fitment": "Compatible with KDTM354DSS4"
+      },
+      {
+        "partNumber": "PS10057161",
+        "title": "Tine Row",
+        "price": null,
+        "url": "https://www.partselect.com/PS10057161-Whirlpool-W10728160-Tine-Row.htm?SourceCode=21&SearchTerm=KDTM354DSS4&ModelNum=KDTM354DSS4",
+        "fitment": "Compatible with KDTM354DSS4"
+      },
+      {
+        "partNumber": "PS9494999",
+        "title": "Dishwasher Heating Element",
+        "price": null,
+        "url": "https://www.partselect.com/PS9494999-Whirlpool-W10703867-Dishwasher-Heating-Element.htm?SourceCode=21&SearchTerm=KDTM354DSS4&ModelNum=KDTM354DSS4",
+        "fitment": "Compatible with KDTM354DSS4"
+      }
+    ],
+    "scrapedAt": "2026-05-31T22:06:00.127Z"
+  },
+  "WRS325SDHZ08": {
+    "modelNumber": "WRS325SDHZ08",
+    "brand": "Whirlpool",
+    "type": "Refrigerator",
+    "partNumbers": [
+      "PS12723962",
+      "PS11739011",
+      "PS11742751",
+      "PS11742745",
+      "PS2377577",
+      "PS16875920",
+      "PS12347901"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS12723962",
+        "title": "Crisper Drawer Cover Frame",
+        "price": null,
+        "url": "https://www.partselect.com/PS12723962-Whirlpool-W11368751-Crisper-Drawer-Cover-Frame.htm?SourceCode=21&SearchTerm=WRS325SDHZ08&ModelNum=WRS325SDHZ08",
+        "fitment": "Compatible with WRS325SDHZ08"
+      },
+      {
+        "partNumber": "PS11739011",
+        "title": "Fan Grommet",
+        "price": null,
+        "url": "https://www.partselect.com/PS11739011-Whirlpool-WP2176759-Fan-Grommet.htm?SourceCode=21&SearchTerm=WRS325SDHZ08&ModelNum=WRS325SDHZ08",
+        "fitment": "Compatible with WRS325SDHZ08"
+      },
+      {
+        "partNumber": "PS11742751",
+        "title": "Refrigerator Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11742751-Whirlpool-WP489464-Refrigerator-Screw.htm?SourceCode=21&SearchTerm=WRS325SDHZ08&ModelNum=WRS325SDHZ08",
+        "fitment": "Compatible with WRS325SDHZ08"
+      },
+      {
+        "partNumber": "PS11742745",
+        "title": "Refrigerator Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11742745-Whirlpool-WP489399-Refrigerator-Screw.htm?SourceCode=21&SearchTerm=WRS325SDHZ08&ModelNum=WRS325SDHZ08",
+        "fitment": "Compatible with WRS325SDHZ08"
+      },
+      {
+        "partNumber": "PS2377577",
+        "title": "Rotary Blade",
+        "price": null,
+        "url": "https://www.partselect.com/PS2377577-Whirlpool-W10278732-Rotary-Blade.htm?SourceCode=21&SearchTerm=WRS325SDHZ08&ModelNum=WRS325SDHZ08",
+        "fitment": "Compatible with WRS325SDHZ08"
+      },
+      {
+        "partNumber": "PS16875920",
+        "title": "Ice Door",
+        "price": null,
+        "url": "https://www.partselect.com/PS16875920-Whirlpool-W11661892-Ice-Door.htm?SourceCode=21&SearchTerm=WRS325SDHZ08&ModelNum=WRS325SDHZ08",
+        "fitment": "Compatible with WRS325SDHZ08"
+      },
+      {
+        "partNumber": "PS12347901",
+        "title": "Water Filter Housing - White",
+        "price": null,
+        "url": "https://www.partselect.com/PS12347901-Whirlpool-W11162041-Water-Filter-Housing-White.htm?SourceCode=21&SearchTerm=WRS325SDHZ08&ModelNum=WRS325SDHZ08",
+        "fitment": "Compatible with WRS325SDHZ08"
+      }
+    ],
+    "scrapedAt": "2026-05-31T22:05:48.565Z"
+  },
+  "WRF555SDFZ11": {
+    "modelNumber": "WRF555SDFZ11",
+    "brand": "Whirlpool",
+    "type": "Refrigerator",
+    "partNumbers": [
+      "PS11738134",
+      "PS11752912",
+      "PS11723190",
+      "PS11750465",
+      "PS12731166",
+      "PS11750660",
+      "PS8691807",
+      "PS12731165",
+      "PS11759512",
+      "PS11743706",
+      "PS11756053"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS11738134",
+        "title": "Pantry End Cap Kit, LH and RH",
+        "price": null,
+        "url": "https://www.partselect.com/PS11738134-Whirlpool-W10874836-Pantry-End-Cap-Kit-LH-and-RH.htm?SourceCode=21&SearchTerm=WRF555SDFZ11&ModelNum=WRF555SDFZ11",
+        "fitment": "Compatible with WRF555SDFZ11"
+      },
+      {
+        "partNumber": "PS11752912",
+        "title": "Refrigerator Center Rail",
+        "price": null,
+        "url": "https://www.partselect.com/PS11752912-Whirlpool-WPW10326469-Refrigerator-Center-Rail.htm?SourceCode=21&SearchTerm=WRF555SDFZ11&ModelNum=WRF555SDFZ11",
+        "fitment": "Compatible with WRF555SDFZ11"
+      },
+      {
+        "partNumber": "PS11723190",
+        "title": "Refrigerator Pantry Drawer Door Cover",
+        "price": null,
+        "url": "https://www.partselect.com/PS11723190-Whirlpool-W10827015-Refrigerator-Pantry-Drawer-Door-Cover.htm?SourceCode=21&SearchTerm=WRF555SDFZ11&ModelNum=WRF555SDFZ11",
+        "fitment": "Compatible with WRF555SDFZ11"
+      },
+      {
+        "partNumber": "PS11750465",
+        "title": "Cantilever Bin",
+        "price": null,
+        "url": "https://www.partselect.com/PS11750465-Whirlpool-WPW10212139-Cantilever-Bin.htm?SourceCode=21&SearchTerm=WRF555SDFZ11&ModelNum=WRF555SDFZ11",
+        "fitment": "Compatible with WRF555SDFZ11"
+      },
+      {
+        "partNumber": "PS12731166",
+        "title": "Door Switch",
+        "price": null,
+        "url": "https://www.partselect.com/PS12731166-Whirlpool-W11396033-Door-Switch.htm?SourceCode=21&SearchTerm=WRF555SDFZ11&ModelNum=WRF555SDFZ11",
+        "fitment": "Compatible with WRF555SDFZ11"
+      },
+      {
+        "partNumber": "PS11750660",
+        "title": "Door Bin",
+        "price": null,
+        "url": "https://www.partselect.com/PS11750660-Whirlpool-WPW10224961-Door-Bin.htm?SourceCode=21&SearchTerm=WRF555SDFZ11&ModelNum=WRF555SDFZ11",
+        "fitment": "Compatible with WRF555SDFZ11"
+      },
+      {
+        "partNumber": "PS8691807",
+        "title": "P-Trap Drain Tube Kit",
+        "price": null,
+        "url": "https://www.partselect.com/PS8691807-Whirlpool-W10619951-P-Trap-Drain-Tube-Kit.htm?SourceCode=21&SearchTerm=WRF555SDFZ11&ModelNum=WRF555SDFZ11",
+        "fitment": "Compatible with WRF555SDFZ11"
+      },
+      {
+        "partNumber": "PS12731165",
+        "title": "Refrigerator Water Filter Bypass",
+        "price": null,
+        "url": "https://www.partselect.com/PS12731165-Whirlpool-W11395888-Refrigerator-Water-Filter-Bypass.htm?SourceCode=21&SearchTerm=WRF555SDFZ11&ModelNum=WRF555SDFZ11",
+        "fitment": "Compatible with WRF555SDFZ11"
+      },
+      {
+        "partNumber": "PS11759512",
+        "title": "Gray Refrigerator Door Gasket",
+        "price": null,
+        "url": "https://www.partselect.com/PS11759512-Whirlpool-W10830055-Gray-Refrigerator-Door-Gasket.htm?SourceCode=21&SearchTerm=WRF555SDFZ11&ModelNum=WRF555SDFZ11",
+        "fitment": "Compatible with WRF555SDFZ11"
+      },
+      {
+        "partNumber": "PS11743706",
+        "title": "Crisper Glass Shelf Insert",
+        "price": null,
+        "url": "https://www.partselect.com/PS11743706-Whirlpool-WP67006704-Crisper-Glass-Shelf-Insert.htm?SourceCode=21&SearchTerm=WRF555SDFZ11&ModelNum=WRF555SDFZ11",
+        "fitment": "Compatible with WRF555SDFZ11"
+      },
+      {
+        "partNumber": "PS11756053",
+        "title": "Refrigerator Kickplate Grille (Apollo Gray)",
+        "price": null,
+        "url": "https://www.partselect.com/PS11756053-Whirlpool-WPW10534155-Refrigerator-Kickplate-Grille-Apollo-Gray.htm?SourceCode=21&SearchTerm=WRF555SDFZ11&ModelNum=WRF555SDFZ11",
+        "fitment": "Compatible with WRF555SDFZ11"
+      }
+    ],
+    "scrapedAt": "2026-05-31T22:05:49.696Z"
+  },
+  "WRS571CIHZ01": {
+    "modelNumber": "WRS571CIHZ01",
+    "brand": "Whirlpool",
+    "type": "Refrigerator",
+    "partNumbers": [
+      "PS11701542",
+      "PS11757236",
+      "PS12728638",
+      "PS12731166",
+      "PS11738120",
+      "PS11757021",
+      "PS12347522",
+      "PS11742755",
+      "PS11738973",
+      "PS11739241",
+      "PS11739043"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS11701542",
+        "title": "Refrigerator Ice and Water Filter",
+        "price": null,
+        "url": "https://www.partselect.com/PS11701542-Whirlpool-EDR1RXD1-Refrigerator-Ice-and-Water-Filter.htm?SourceCode=21&SearchTerm=WRS571CIHZ01&ModelNum=WRS571CIHZ01",
+        "fitment": "Compatible with WRS571CIHZ01"
+      },
+      {
+        "partNumber": "PS11757236",
+        "title": "Gallon Door Bin - Clear",
+        "price": null,
+        "url": "https://www.partselect.com/PS11757236-Whirlpool-WPW10710203-Gallon-Door-Bin-Clear.htm?SourceCode=21&SearchTerm=WRS571CIHZ01&ModelNum=WRS571CIHZ01",
+        "fitment": "Compatible with WRS571CIHZ01"
+      },
+      {
+        "partNumber": "PS12728638",
+        "title": "Refrigerator Door Switch",
+        "price": null,
+        "url": "https://www.partselect.com/PS12728638-Whirlpool-W11384469-Refrigerator-Door-Switch.htm?SourceCode=21&SearchTerm=WRS571CIHZ01&ModelNum=WRS571CIHZ01",
+        "fitment": "Compatible with WRS571CIHZ01"
+      },
+      {
+        "partNumber": "PS12731166",
+        "title": "Door Switch",
+        "price": null,
+        "url": "https://www.partselect.com/PS12731166-Whirlpool-W11396033-Door-Switch.htm?SourceCode=21&SearchTerm=WRS571CIHZ01&ModelNum=WRS571CIHZ01",
+        "fitment": "Compatible with WRS571CIHZ01"
+      },
+      {
+        "partNumber": "PS11738120",
+        "title": "Refrigerator Ice Maker",
+        "price": null,
+        "url": "https://www.partselect.com/PS11738120-Whirlpool-W10873791-Refrigerator-Ice-Maker.htm?SourceCode=21&SearchTerm=WRS571CIHZ01&ModelNum=WRS571CIHZ01",
+        "fitment": "Compatible with WRS571CIHZ01"
+      },
+      {
+        "partNumber": "PS11757021",
+        "title": "Refrigerator Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11757021-Whirlpool-WPW10661886-Refrigerator-Screw.htm?SourceCode=21&SearchTerm=WRS571CIHZ01&ModelNum=WRS571CIHZ01",
+        "fitment": "Compatible with WRS571CIHZ01"
+      },
+      {
+        "partNumber": "PS12347522",
+        "title": "Glass Shelf",
+        "price": null,
+        "url": "https://www.partselect.com/PS12347522-Whirlpool-W11130203-Glass-Shelf.htm?SourceCode=21&SearchTerm=WRS571CIHZ01&ModelNum=WRS571CIHZ01",
+        "fitment": "Compatible with WRS571CIHZ01"
+      },
+      {
+        "partNumber": "PS11742755",
+        "title": "Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11742755-Whirlpool-WP489483-Screw.htm?SourceCode=21&SearchTerm=WRS571CIHZ01&ModelNum=WRS571CIHZ01",
+        "fitment": "Compatible with WRS571CIHZ01"
+      },
+      {
+        "partNumber": "PS11738973",
+        "title": "Evaporator Fan Blade",
+        "price": null,
+        "url": "https://www.partselect.com/PS11738973-Whirlpool-WP2169142-Evaporator-Fan-Blade.htm?SourceCode=21&SearchTerm=WRS571CIHZ01&ModelNum=WRS571CIHZ01",
+        "fitment": "Compatible with WRS571CIHZ01"
+      },
+      {
+        "partNumber": "PS11739241",
+        "title": "Refrigerator Seal",
+        "price": null,
+        "url": "https://www.partselect.com/PS11739241-Whirlpool-WP2198628-Refrigerator-Seal.htm?SourceCode=21&SearchTerm=WRS571CIHZ01&ModelNum=WRS571CIHZ01",
+        "fitment": "Compatible with WRS571CIHZ01"
+      },
+      {
+        "partNumber": "PS11739043",
+        "title": "Refrigerator Thimble Top",
+        "price": null,
+        "url": "https://www.partselect.com/PS11739043-Whirlpool-WP2182181-Refrigerator-Thimble-Top.htm?SourceCode=21&SearchTerm=WRS571CIHZ01&ModelNum=WRS571CIHZ01",
+        "fitment": "Compatible with WRS571CIHZ01"
+      }
+    ],
+    "scrapedAt": "2026-05-31T22:05:50.834Z"
+  },
+  "WRX735SDHZ04": {
+    "modelNumber": "WRX735SDHZ04",
+    "brand": "KitchenAid/Whirlpool",
+    "type": "Dishwasher",
+    "partNumbers": [
+      "PS12731166",
+      "PS8691807",
+      "PS12731165",
+      "PS12584655",
+      "PS11756053",
+      "PS11743531",
+      "PS16555201",
+      "PS11743682",
+      "PS11757265",
+      "PS2003866",
+      "PS11759518"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS12731166",
+        "title": "Door Switch",
+        "price": null,
+        "url": "https://www.partselect.com/PS12731166-Whirlpool-W11396033-Door-Switch.htm?SourceCode=21&SearchTerm=WRX735SDHZ04&ModelNum=WRX735SDHZ04",
+        "fitment": "Compatible with WRX735SDHZ04"
+      },
+      {
+        "partNumber": "PS8691807",
+        "title": "P-Trap Drain Tube Kit",
+        "price": null,
+        "url": "https://www.partselect.com/PS8691807-Whirlpool-W10619951-P-Trap-Drain-Tube-Kit.htm?SourceCode=21&SearchTerm=WRX735SDHZ04&ModelNum=WRX735SDHZ04",
+        "fitment": "Compatible with WRX735SDHZ04"
+      },
+      {
+        "partNumber": "PS12731165",
+        "title": "Refrigerator Water Filter Bypass",
+        "price": null,
+        "url": "https://www.partselect.com/PS12731165-Whirlpool-W11395888-Refrigerator-Water-Filter-Bypass.htm?SourceCode=21&SearchTerm=WRX735SDHZ04&ModelNum=WRX735SDHZ04",
+        "fitment": "Compatible with WRX735SDHZ04"
+      },
+      {
+        "partNumber": "PS12584655",
+        "title": "Refrigerator Switch",
+        "price": null,
+        "url": "https://www.partselect.com/PS12584655-Whirlpool-W11291138-Refrigerator-Switch.htm?SourceCode=21&SearchTerm=WRX735SDHZ04&ModelNum=WRX735SDHZ04",
+        "fitment": "Compatible with WRX735SDHZ04"
+      },
+      {
+        "partNumber": "PS11756053",
+        "title": "Refrigerator Kickplate Grille (Apollo Gray)",
+        "price": null,
+        "url": "https://www.partselect.com/PS11756053-Whirlpool-WPW10534155-Refrigerator-Kickplate-Grille-Apollo-Gray.htm?SourceCode=21&SearchTerm=WRX735SDHZ04&ModelNum=WRX735SDHZ04",
+        "fitment": "Compatible with WRX735SDHZ04"
+      },
+      {
+        "partNumber": "PS11743531",
+        "title": "Refrigerator Pivot Block",
+        "price": null,
+        "url": "https://www.partselect.com/PS11743531-Whirlpool-WP67003405-Refrigerator-Pivot-Block.htm?SourceCode=21&SearchTerm=WRX735SDHZ04&ModelNum=WRX735SDHZ04",
+        "fitment": "Compatible with WRX735SDHZ04"
+      },
+      {
+        "partNumber": "PS16555201",
+        "title": "LED Light Module",
+        "price": null,
+        "url": "https://www.partselect.com/PS16555201-Whirlpool-W11527432-LED-Light-Module.htm?SourceCode=21&SearchTerm=WRX735SDHZ04&ModelNum=WRX735SDHZ04",
+        "fitment": "Compatible with WRX735SDHZ04"
+      },
+      {
+        "partNumber": "PS11743682",
+        "title": "Water Filter Cover",
+        "price": null,
+        "url": "https://www.partselect.com/PS11743682-Whirlpool-WP67006331-Water-Filter-Cover.htm?SourceCode=21&SearchTerm=WRX735SDHZ04&ModelNum=WRX735SDHZ04",
+        "fitment": "Compatible with WRX735SDHZ04"
+      },
+      {
+        "partNumber": "PS11757265",
+        "title": "Freezer Door Gasket",
+        "price": null,
+        "url": "https://www.partselect.com/PS11757265-Whirlpool-WPW10714545-Freezer-Door-Gasket.htm?SourceCode=21&SearchTerm=WRX735SDHZ04&ModelNum=WRX735SDHZ04",
+        "fitment": "Compatible with WRX735SDHZ04"
+      },
+      {
+        "partNumber": "PS2003866",
+        "title": "Drawer Gear Kit",
+        "price": null,
+        "url": "https://www.partselect.com/PS2003866-Whirlpool-12002497-Drawer-Gear-Kit.htm?SourceCode=21&SearchTerm=WRX735SDHZ04&ModelNum=WRX735SDHZ04",
+        "fitment": "Compatible with WRX735SDHZ04"
+      },
+      {
+        "partNumber": "PS11759518",
+        "title": "Door Gasket - Grey",
+        "price": null,
+        "url": "https://www.partselect.com/PS11759518-Whirlpool-W10830274-Door-Gasket-Grey.htm?SourceCode=21&SearchTerm=WRX735SDHZ04&ModelNum=WRX735SDHZ04",
+        "fitment": "Compatible with WRX735SDHZ04"
+      }
+    ],
+    "scrapedAt": "2026-05-31T22:05:51.963Z"
+  },
+  "WRS588FIHZ04": {
+    "modelNumber": "WRS588FIHZ04",
+    "brand": "Whirlpool",
+    "type": "Refrigerator",
+    "partNumbers": [
+      "PS16875810",
+      "PS11752508",
+      "PS16660578",
+      "PS11751304",
+      "PS12741751",
+      "PS16660563",
+      "PS11740270"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS16875810",
+        "title": "Bin Latch",
+        "price": null,
+        "url": "https://www.partselect.com/PS16875810-Whirlpool-W11652042-Bin-Latch.htm?SourceCode=21&SearchTerm=WRS588FIHZ04&ModelNum=WRS588FIHZ04",
+        "fitment": "Compatible with WRS588FIHZ04"
+      },
+      {
+        "partNumber": "PS11752508",
+        "title": "Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11752508-Whirlpool-WPW10308751-Screw.htm?SourceCode=21&SearchTerm=WRS588FIHZ04&ModelNum=WRS588FIHZ04",
+        "fitment": "Compatible with WRS588FIHZ04"
+      },
+      {
+        "partNumber": "PS16660578",
+        "title": "CHUTE",
+        "price": null,
+        "url": "https://www.partselect.com/PS16660578-Whirlpool-W11573761-CHUTE.htm?SourceCode=21&SearchTerm=WRS588FIHZ04&ModelNum=WRS588FIHZ04",
+        "fitment": "Compatible with WRS588FIHZ04"
+      },
+      {
+        "partNumber": "PS11751304",
+        "title": "Door Cam",
+        "price": null,
+        "url": "https://www.partselect.com/PS11751304-Whirlpool-WPW10257201-Door-Cam.htm?SourceCode=21&SearchTerm=WRS588FIHZ04&ModelNum=WRS588FIHZ04",
+        "fitment": "Compatible with WRS588FIHZ04"
+      },
+      {
+        "partNumber": "PS12741751",
+        "title": "Door Hinge",
+        "price": null,
+        "url": "https://www.partselect.com/PS12741751-Whirlpool-W11409290-Door-Hinge.htm?SourceCode=21&SearchTerm=WRS588FIHZ04&ModelNum=WRS588FIHZ04",
+        "fitment": "Compatible with WRS588FIHZ04"
+      },
+      {
+        "partNumber": "PS16660563",
+        "title": "HINGE-DOOR",
+        "price": null,
+        "url": "https://www.partselect.com/PS16660563-Whirlpool-W11573587-HINGE-DOOR.htm?SourceCode=21&SearchTerm=WRS588FIHZ04&ModelNum=WRS588FIHZ04",
+        "fitment": "Compatible with WRS588FIHZ04"
+      },
+      {
+        "partNumber": "PS11740270",
+        "title": "Washer",
+        "price": null,
+        "url": "https://www.partselect.com/PS11740270-Whirlpool-WP2305382-Washer.htm?SourceCode=21&SearchTerm=WRS588FIHZ04&ModelNum=WRS588FIHZ04",
+        "fitment": "Compatible with WRS588FIHZ04"
+      }
+    ],
+    "scrapedAt": "2026-05-31T22:05:53.071Z"
+  },
+  "WRS321SDHZ01": {
+    "modelNumber": "WRS321SDHZ01",
+    "brand": "Whirlpool",
+    "type": "Refrigerator",
+    "partNumbers": [
+      "PS11701542",
+      "PS12728638",
+      "PS12731166",
+      "PS12578777",
+      "PS12347929",
+      "PS11757021",
+      "PS11730901",
+      "PS11740306",
+      "PS11742758",
+      "PS11742755"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS11701542",
+        "title": "Refrigerator Ice and Water Filter",
+        "price": null,
+        "url": "https://www.partselect.com/PS11701542-Whirlpool-EDR1RXD1-Refrigerator-Ice-and-Water-Filter.htm?SourceCode=21&SearchTerm=WRS321SDHZ01&ModelNum=WRS321SDHZ01",
+        "fitment": "Compatible with WRS321SDHZ01"
+      },
+      {
+        "partNumber": "PS12728638",
+        "title": "Refrigerator Door Switch",
+        "price": null,
+        "url": "https://www.partselect.com/PS12728638-Whirlpool-W11384469-Refrigerator-Door-Switch.htm?SourceCode=21&SearchTerm=WRS321SDHZ01&ModelNum=WRS321SDHZ01",
+        "fitment": "Compatible with WRS321SDHZ01"
+      },
+      {
+        "partNumber": "PS12731166",
+        "title": "Door Switch",
+        "price": null,
+        "url": "https://www.partselect.com/PS12731166-Whirlpool-W11396033-Door-Switch.htm?SourceCode=21&SearchTerm=WRS321SDHZ01&ModelNum=WRS321SDHZ01",
+        "fitment": "Compatible with WRS321SDHZ01"
+      },
+      {
+        "partNumber": "PS12578777",
+        "title": "Door Shelf Bin",
+        "price": null,
+        "url": "https://www.partselect.com/PS12578777-Whirlpool-W11239961-Door-Shelf-Bin.htm?SourceCode=21&SearchTerm=WRS321SDHZ01&ModelNum=WRS321SDHZ01",
+        "fitment": "Compatible with WRS321SDHZ01"
+      },
+      {
+        "partNumber": "PS12347929",
+        "title": "Crisper Drawer",
+        "price": null,
+        "url": "https://www.partselect.com/PS12347929-Whirlpool-W11162443-Crisper-Drawer.htm?SourceCode=21&SearchTerm=WRS321SDHZ01&ModelNum=WRS321SDHZ01",
+        "fitment": "Compatible with WRS321SDHZ01"
+      },
+      {
+        "partNumber": "PS11757021",
+        "title": "Refrigerator Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11757021-Whirlpool-WPW10661886-Refrigerator-Screw.htm?SourceCode=21&SearchTerm=WRS321SDHZ01&ModelNum=WRS321SDHZ01",
+        "fitment": "Compatible with WRS321SDHZ01"
+      },
+      {
+        "partNumber": "PS11730901",
+        "title": "Water Tube Kit",
+        "price": null,
+        "url": "https://www.partselect.com/PS11730901-Whirlpool-W10823511-Water-Tube-Kit.htm?SourceCode=21&SearchTerm=WRS321SDHZ01&ModelNum=WRS321SDHZ01",
+        "fitment": "Compatible with WRS321SDHZ01"
+      },
+      {
+        "partNumber": "PS11740306",
+        "title": "Door Shelf",
+        "price": null,
+        "url": "https://www.partselect.com/PS11740306-Whirlpool-WP2309941-Door-Shelf.htm?SourceCode=21&SearchTerm=WRS321SDHZ01&ModelNum=WRS321SDHZ01",
+        "fitment": "Compatible with WRS321SDHZ01"
+      },
+      {
+        "partNumber": "PS11742758",
+        "title": "Refrigerator Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11742758-Whirlpool-WP489497-Refrigerator-Screw.htm?SourceCode=21&SearchTerm=WRS321SDHZ01&ModelNum=WRS321SDHZ01",
+        "fitment": "Compatible with WRS321SDHZ01"
+      },
+      {
+        "partNumber": "PS11742755",
+        "title": "Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11742755-Whirlpool-WP489483-Screw.htm?SourceCode=21&SearchTerm=WRS321SDHZ01&ModelNum=WRS321SDHZ01",
+        "fitment": "Compatible with WRS321SDHZ01"
+      }
+    ],
+    "scrapedAt": "2026-05-31T22:05:54.177Z"
+  },
+  "WRS325SDHZ05": {
+    "modelNumber": "WRS325SDHZ05",
+    "brand": "Whirlpool",
+    "type": "Refrigerator",
+    "partNumbers": [
+      "PS11701542",
+      "PS12728638",
+      "PS12731166",
+      "PS11757044",
+      "PS12578777",
+      "PS12347929",
+      "PS11757021",
+      "PS11730901",
+      "PS11742758",
+      "PS11742755"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS11701542",
+        "title": "Refrigerator Ice and Water Filter",
+        "price": null,
+        "url": "https://www.partselect.com/PS11701542-Whirlpool-EDR1RXD1-Refrigerator-Ice-and-Water-Filter.htm?SourceCode=21&SearchTerm=WRS325SDHZ05&ModelNum=WRS325SDHZ05",
+        "fitment": "Compatible with WRS325SDHZ05"
+      },
+      {
+        "partNumber": "PS12728638",
+        "title": "Refrigerator Door Switch",
+        "price": null,
+        "url": "https://www.partselect.com/PS12728638-Whirlpool-W11384469-Refrigerator-Door-Switch.htm?SourceCode=21&SearchTerm=WRS325SDHZ05&ModelNum=WRS325SDHZ05",
+        "fitment": "Compatible with WRS325SDHZ05"
+      },
+      {
+        "partNumber": "PS12731166",
+        "title": "Door Switch",
+        "price": null,
+        "url": "https://www.partselect.com/PS12731166-Whirlpool-W11396033-Door-Switch.htm?SourceCode=21&SearchTerm=WRS325SDHZ05&ModelNum=WRS325SDHZ05",
+        "fitment": "Compatible with WRS325SDHZ05"
+      },
+      {
+        "partNumber": "PS11757044",
+        "title": "Refrigerator Ice Bucket",
+        "price": null,
+        "url": "https://www.partselect.com/PS11757044-Whirlpool-WPW10670845-Refrigerator-Ice-Bucket.htm?SourceCode=21&SearchTerm=WRS325SDHZ05&ModelNum=WRS325SDHZ05",
+        "fitment": "Compatible with WRS325SDHZ05"
+      },
+      {
+        "partNumber": "PS12578777",
+        "title": "Door Shelf Bin",
+        "price": null,
+        "url": "https://www.partselect.com/PS12578777-Whirlpool-W11239961-Door-Shelf-Bin.htm?SourceCode=21&SearchTerm=WRS325SDHZ05&ModelNum=WRS325SDHZ05",
+        "fitment": "Compatible with WRS325SDHZ05"
+      },
+      {
+        "partNumber": "PS12347929",
+        "title": "Crisper Drawer",
+        "price": null,
+        "url": "https://www.partselect.com/PS12347929-Whirlpool-W11162443-Crisper-Drawer.htm?SourceCode=21&SearchTerm=WRS325SDHZ05&ModelNum=WRS325SDHZ05",
+        "fitment": "Compatible with WRS325SDHZ05"
+      },
+      {
+        "partNumber": "PS11757021",
+        "title": "Refrigerator Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11757021-Whirlpool-WPW10661886-Refrigerator-Screw.htm?SourceCode=21&SearchTerm=WRS325SDHZ05&ModelNum=WRS325SDHZ05",
+        "fitment": "Compatible with WRS325SDHZ05"
+      },
+      {
+        "partNumber": "PS11730901",
+        "title": "Water Tube Kit",
+        "price": null,
+        "url": "https://www.partselect.com/PS11730901-Whirlpool-W10823511-Water-Tube-Kit.htm?SourceCode=21&SearchTerm=WRS325SDHZ05&ModelNum=WRS325SDHZ05",
+        "fitment": "Compatible with WRS325SDHZ05"
+      },
+      {
+        "partNumber": "PS11742758",
+        "title": "Refrigerator Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11742758-Whirlpool-WP489497-Refrigerator-Screw.htm?SourceCode=21&SearchTerm=WRS325SDHZ05&ModelNum=WRS325SDHZ05",
+        "fitment": "Compatible with WRS325SDHZ05"
+      },
+      {
+        "partNumber": "PS11742755",
+        "title": "Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11742755-Whirlpool-WP489483-Screw.htm?SourceCode=21&SearchTerm=WRS325SDHZ05&ModelNum=WRS325SDHZ05",
+        "fitment": "Compatible with WRS325SDHZ05"
+      }
+    ],
+    "scrapedAt": "2026-05-31T22:05:55.302Z"
+  },
+  "WRF535SWHZ00": {
+    "modelNumber": "WRF535SWHZ00",
+    "brand": "Whirlpool",
+    "type": "Refrigerator",
+    "partNumbers": [
+      "PS11722130",
+      "PS11738134",
+      "PS11752912",
+      "PS11723190",
+      "PS12728638",
+      "PS12731166",
+      "PS11765620",
+      "PS11742240",
+      "PS11759515",
+      "PS8691807",
+      "PS11753892",
+      "PS11752093"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS11722130",
+        "title": "Refrigerator Water Filter",
+        "price": null,
+        "url": "https://www.partselect.com/PS11722130-Whirlpool-EDR4RXD1-Refrigerator-Water-Filter.htm?SourceCode=21&SearchTerm=WRF535SWHZ00&ModelNum=WRF535SWHZ00",
+        "fitment": "Compatible with WRF535SWHZ00"
+      },
+      {
+        "partNumber": "PS11738134",
+        "title": "Pantry End Cap Kit, LH and RH",
+        "price": null,
+        "url": "https://www.partselect.com/PS11738134-Whirlpool-W10874836-Pantry-End-Cap-Kit-LH-and-RH.htm?SourceCode=21&SearchTerm=WRF535SWHZ00&ModelNum=WRF535SWHZ00",
+        "fitment": "Compatible with WRF535SWHZ00"
+      },
+      {
+        "partNumber": "PS11752912",
+        "title": "Refrigerator Center Rail",
+        "price": null,
+        "url": "https://www.partselect.com/PS11752912-Whirlpool-WPW10326469-Refrigerator-Center-Rail.htm?SourceCode=21&SearchTerm=WRF535SWHZ00&ModelNum=WRF535SWHZ00",
+        "fitment": "Compatible with WRF535SWHZ00"
+      },
+      {
+        "partNumber": "PS11723190",
+        "title": "Refrigerator Pantry Drawer Door Cover",
+        "price": null,
+        "url": "https://www.partselect.com/PS11723190-Whirlpool-W10827015-Refrigerator-Pantry-Drawer-Door-Cover.htm?SourceCode=21&SearchTerm=WRF535SWHZ00&ModelNum=WRF535SWHZ00",
+        "fitment": "Compatible with WRF535SWHZ00"
+      },
+      {
+        "partNumber": "PS12728638",
+        "title": "Refrigerator Door Switch",
+        "price": null,
+        "url": "https://www.partselect.com/PS12728638-Whirlpool-W11384469-Refrigerator-Door-Switch.htm?SourceCode=21&SearchTerm=WRF535SWHZ00&ModelNum=WRF535SWHZ00",
+        "fitment": "Compatible with WRF535SWHZ00"
+      },
+      {
+        "partNumber": "PS12731166",
+        "title": "Door Switch",
+        "price": null,
+        "url": "https://www.partselect.com/PS12731166-Whirlpool-W11396033-Door-Switch.htm?SourceCode=21&SearchTerm=WRF535SWHZ00&ModelNum=WRF535SWHZ00",
+        "fitment": "Compatible with WRF535SWHZ00"
+      },
+      {
+        "partNumber": "PS11765620",
+        "title": "Refrigerator Ice Maker Assembly",
+        "price": null,
+        "url": "https://www.partselect.com/PS11765620-Whirlpool-W10884390-Refrigerator-Ice-Maker-Assembly.htm?SourceCode=21&SearchTerm=WRF535SWHZ00&ModelNum=WRF535SWHZ00",
+        "fitment": "Compatible with WRF535SWHZ00"
+      },
+      {
+        "partNumber": "PS11742240",
+        "title": "Refrigerator Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11742240-Whirlpool-WP400021-1-Refrigerator-Screw.htm?SourceCode=21&SearchTerm=WRF535SWHZ00&ModelNum=WRF535SWHZ00",
+        "fitment": "Compatible with WRF535SWHZ00"
+      },
+      {
+        "partNumber": "PS11759515",
+        "title": "Door Gasket - Gray",
+        "price": null,
+        "url": "https://www.partselect.com/PS11759515-Whirlpool-W10830162-Door-Gasket-Gray.htm?SourceCode=21&SearchTerm=WRF535SWHZ00&ModelNum=WRF535SWHZ00",
+        "fitment": "Compatible with WRF535SWHZ00"
+      },
+      {
+        "partNumber": "PS8691807",
+        "title": "P-Trap Drain Tube Kit",
+        "price": null,
+        "url": "https://www.partselect.com/PS8691807-Whirlpool-W10619951-P-Trap-Drain-Tube-Kit.htm?SourceCode=21&SearchTerm=WRF535SWHZ00&ModelNum=WRF535SWHZ00",
+        "fitment": "Compatible with WRF535SWHZ00"
+      },
+      {
+        "partNumber": "PS11753892",
+        "title": "Refrigerator Door Bin",
+        "price": null,
+        "url": "https://www.partselect.com/PS11753892-Whirlpool-WPW10371194-Refrigerator-Door-Bin.htm?SourceCode=21&SearchTerm=WRF535SWHZ00&ModelNum=WRF535SWHZ00",
+        "fitment": "Compatible with WRF535SWHZ00"
+      },
+      {
+        "partNumber": "PS11752093",
+        "title": "Refrigerator Door Bin",
+        "price": null,
+        "url": "https://www.partselect.com/PS11752093-Whirlpool-WPW10289497-Refrigerator-Door-Bin.htm?SourceCode=21&SearchTerm=WRF535SWHZ00&ModelNum=WRF535SWHZ00",
+        "fitment": "Compatible with WRF535SWHZ00"
+      }
+    ],
+    "scrapedAt": "2026-05-31T22:05:57.887Z"
+  },
+  "WRS325SDHB01": {
+    "modelNumber": "WRS325SDHB01",
+    "brand": "Whirlpool",
+    "type": "Refrigerator",
+    "partNumbers": [
+      "PS11701542",
+      "PS12728638",
+      "PS11757044",
+      "PS12578777",
+      "PS17629131",
+      "PS12347929",
+      "PS11757021",
+      "PS11730901",
+      "PS11740306",
+      "PS11742758"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS11701542",
+        "title": "Refrigerator Ice and Water Filter",
+        "price": null,
+        "url": "https://www.partselect.com/PS11701542-Whirlpool-EDR1RXD1-Refrigerator-Ice-and-Water-Filter.htm?SourceCode=21&SearchTerm=WRS325SDHB01&ModelNum=WRS325SDHB01",
+        "fitment": "Compatible with WRS325SDHB01"
+      },
+      {
+        "partNumber": "PS12728638",
+        "title": "Refrigerator Door Switch",
+        "price": null,
+        "url": "https://www.partselect.com/PS12728638-Whirlpool-W11384469-Refrigerator-Door-Switch.htm?SourceCode=21&SearchTerm=WRS325SDHB01&ModelNum=WRS325SDHB01",
+        "fitment": "Compatible with WRS325SDHB01"
+      },
+      {
+        "partNumber": "PS11757044",
+        "title": "Refrigerator Ice Bucket",
+        "price": null,
+        "url": "https://www.partselect.com/PS11757044-Whirlpool-WPW10670845-Refrigerator-Ice-Bucket.htm?SourceCode=21&SearchTerm=WRS325SDHB01&ModelNum=WRS325SDHB01",
+        "fitment": "Compatible with WRS325SDHB01"
+      },
+      {
+        "partNumber": "PS12578777",
+        "title": "Door Shelf Bin",
+        "price": null,
+        "url": "https://www.partselect.com/PS12578777-Whirlpool-W11239961-Door-Shelf-Bin.htm?SourceCode=21&SearchTerm=WRS325SDHB01&ModelNum=WRS325SDHB01",
+        "fitment": "Compatible with WRS325SDHB01"
+      },
+      {
+        "partNumber": "PS17629131",
+        "title": "ICE MAKER KIT-PKG ASSEMBLY (EZ",
+        "price": null,
+        "url": "https://www.partselect.com/PS17629131-Whirlpool-W11700559-ICE-MAKER-KIT-PKG-ASSEMBLY-EZ.htm?SourceCode=21&SearchTerm=WRS325SDHB01&ModelNum=WRS325SDHB01",
+        "fitment": "Compatible with WRS325SDHB01"
+      },
+      {
+        "partNumber": "PS12347929",
+        "title": "Crisper Drawer",
+        "price": null,
+        "url": "https://www.partselect.com/PS12347929-Whirlpool-W11162443-Crisper-Drawer.htm?SourceCode=21&SearchTerm=WRS325SDHB01&ModelNum=WRS325SDHB01",
+        "fitment": "Compatible with WRS325SDHB01"
+      },
+      {
+        "partNumber": "PS11757021",
+        "title": "Refrigerator Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11757021-Whirlpool-WPW10661886-Refrigerator-Screw.htm?SourceCode=21&SearchTerm=WRS325SDHB01&ModelNum=WRS325SDHB01",
+        "fitment": "Compatible with WRS325SDHB01"
+      },
+      {
+        "partNumber": "PS11730901",
+        "title": "Water Tube Kit",
+        "price": null,
+        "url": "https://www.partselect.com/PS11730901-Whirlpool-W10823511-Water-Tube-Kit.htm?SourceCode=21&SearchTerm=WRS325SDHB01&ModelNum=WRS325SDHB01",
+        "fitment": "Compatible with WRS325SDHB01"
+      },
+      {
+        "partNumber": "PS11740306",
+        "title": "Door Shelf",
+        "price": null,
+        "url": "https://www.partselect.com/PS11740306-Whirlpool-WP2309941-Door-Shelf.htm?SourceCode=21&SearchTerm=WRS325SDHB01&ModelNum=WRS325SDHB01",
+        "fitment": "Compatible with WRS325SDHB01"
+      },
+      {
+        "partNumber": "PS11742758",
+        "title": "Refrigerator Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11742758-Whirlpool-WP489497-Refrigerator-Screw.htm?SourceCode=21&SearchTerm=WRS325SDHB01&ModelNum=WRS325SDHB01",
+        "fitment": "Compatible with WRS325SDHB01"
+      }
+    ],
+    "scrapedAt": "2026-05-31T22:05:59.007Z"
+  },
+  "WDF520PADM7": {
+    "modelNumber": "WDF520PADM7",
+    "brand": "KitchenAid/Whirlpool",
+    "type": "Dishwasher",
+    "partNumbers": [
+      "PS11746591",
+      "PS8260087",
+      "PS11745496",
+      "PS11745488",
+      "PS11755736",
+      "PS12578165",
+      "PS11759673",
+      "PS12347808",
+      "PS11743008",
+      "PS11743423",
+      "PS18355438",
+      "PS11755737"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS11746591",
+        "title": "Dishwasher Rack Track Stop",
+        "price": null,
+        "url": "https://www.partselect.com/PS11746591-Whirlpool-WP8565925-Dishwasher-Rack-Track-Stop.htm?SourceCode=21&SearchTerm=WDF520PADM7&ModelNum=WDF520PADM7",
+        "fitment": "Compatible with WDF520PADM7"
+      },
+      {
+        "partNumber": "PS8260087",
+        "title": "Dishwasher Heating Element",
+        "price": null,
+        "url": "https://www.partselect.com/PS8260087-Whirlpool-W10518394-Dishwasher-Heating-Element.htm?SourceCode=21&SearchTerm=WDF520PADM7&ModelNum=WDF520PADM7",
+        "fitment": "Compatible with WDF520PADM7"
+      },
+      {
+        "partNumber": "PS11745496",
+        "title": "Dishwasher Mounting Bracket",
+        "price": null,
+        "url": "https://www.partselect.com/PS11745496-Whirlpool-WP8269145-Dishwasher-Mounting-Bracket.htm?SourceCode=21&SearchTerm=WDF520PADM7&ModelNum=WDF520PADM7",
+        "fitment": "Compatible with WDF520PADM7"
+      },
+      {
+        "partNumber": "PS11745488",
+        "title": "Dishwasher Friction Sleeve",
+        "price": null,
+        "url": "https://www.partselect.com/PS11745488-Whirlpool-WP8268961-Dishwasher-Friction-Sleeve.htm?SourceCode=21&SearchTerm=WDF520PADM7&ModelNum=WDF520PADM7",
+        "fitment": "Compatible with WDF520PADM7"
+      },
+      {
+        "partNumber": "PS11755736",
+        "title": "Dishwasher Retainer Clip",
+        "price": null,
+        "url": "https://www.partselect.com/PS11755736-Whirlpool-WPW10503548-Dishwasher-Retainer-Clip.htm?SourceCode=21&SearchTerm=WDF520PADM7&ModelNum=WDF520PADM7",
+        "fitment": "Compatible with WDF520PADM7"
+      },
+      {
+        "partNumber": "PS12578165",
+        "title": "Dishwasher INLET VALVE",
+        "price": null,
+        "url": "https://www.partselect.com/PS12578165-Whirlpool-W11175771-Dishwasher-INLET-VALVE.htm?SourceCode=21&SearchTerm=WDF520PADM7&ModelNum=WDF520PADM7",
+        "fitment": "Compatible with WDF520PADM7"
+      },
+      {
+        "partNumber": "PS11759673",
+        "title": "Dishwasher Filter",
+        "price": null,
+        "url": "https://www.partselect.com/PS11759673-Whirlpool-W10872845-Dishwasher-Filter.htm?SourceCode=21&SearchTerm=WDF520PADM7&ModelNum=WDF520PADM7",
+        "fitment": "Compatible with WDF520PADM7"
+      },
+      {
+        "partNumber": "PS12347808",
+        "title": "Silverware basket",
+        "price": null,
+        "url": "https://www.partselect.com/PS12347808-Whirlpool-W11158802-Silverware-basket.htm?SourceCode=21&SearchTerm=WDF520PADM7&ModelNum=WDF520PADM7",
+        "fitment": "Compatible with WDF520PADM7"
+      },
+      {
+        "partNumber": "PS11743008",
+        "title": "Washer Hose Clamp",
+        "price": null,
+        "url": "https://www.partselect.com/PS11743008-Whirlpool-WP596669-Washer-Hose-Clamp.htm?SourceCode=21&SearchTerm=WDF520PADM7&ModelNum=WDF520PADM7",
+        "fitment": "Compatible with WDF520PADM7"
+      },
+      {
+        "partNumber": "PS11743423",
+        "title": "Dishwasher High Limit Thermostat",
+        "price": null,
+        "url": "https://www.partselect.com/PS11743423-Whirlpool-WP661566-Dishwasher-High-Limit-Thermostat.htm?SourceCode=21&SearchTerm=WDF520PADM7&ModelNum=WDF520PADM7",
+        "fitment": "Compatible with WDF520PADM7"
+      },
+      {
+        "partNumber": "PS18355438",
+        "title": "GASKET",
+        "price": null,
+        "url": "https://www.partselect.com/PS18355438-Whirlpool-W11768590-GASKET.htm?SourceCode=21&SearchTerm=WDF520PADM7&ModelNum=WDF520PADM7",
+        "fitment": "Compatible with WDF520PADM7"
+      },
+      {
+        "partNumber": "PS11755737",
+        "title": "Dishwasher Retainer Clip",
+        "price": null,
+        "url": "https://www.partselect.com/PS11755737-Whirlpool-WPW10503549-Dishwasher-Retainer-Clip.htm?SourceCode=21&SearchTerm=WDF520PADM7&ModelNum=WDF520PADM7",
+        "fitment": "Compatible with WDF520PADM7"
+      }
+    ],
+    "scrapedAt": "2026-05-31T22:06:02.409Z"
+  },
+  "WDT750SAHZ0": {
+    "modelNumber": "WDT750SAHZ0",
+    "brand": "Whirlpool",
+    "type": "Dishwasher",
+    "partNumbers": [
+      "PS3406971",
+      "PS10065979",
+      "PS11746591",
+      "PS11745496",
+      "PS11748190",
+      "PS11750093",
+      "PS12348515",
+      "PS11750092",
+      "PS11755592",
+      "PS11755736",
+      "PS11759673"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS3406971",
+        "title": "Lower Dishrack Wheel",
+        "price": null,
+        "url": "https://www.partselect.com/PS3406971-Whirlpool-W10195416-Lower-Dishrack-Wheel.htm?SourceCode=21&SearchTerm=WDT750SAHZ0&ModelNum=WDT750SAHZ0",
+        "fitment": "Compatible with WDT750SAHZ0"
+      },
+      {
+        "partNumber": "PS10065979",
+        "title": "Upper Rack Adjuster Kit - White Wheels, Left and Right Sides",
+        "price": null,
+        "url": "https://www.partselect.com/PS10065979-Whirlpool-W10712395-Upper-Rack-Adjuster-Kit-White-Wheels-Left-and-Right-Sides.htm?SourceCode=21&SearchTerm=WDT750SAHZ0&ModelNum=WDT750SAHZ0",
+        "fitment": "Compatible with WDT750SAHZ0"
+      },
+      {
+        "partNumber": "PS11746591",
+        "title": "Dishwasher Rack Track Stop",
+        "price": null,
+        "url": "https://www.partselect.com/PS11746591-Whirlpool-WP8565925-Dishwasher-Rack-Track-Stop.htm?SourceCode=21&SearchTerm=WDT750SAHZ0&ModelNum=WDT750SAHZ0",
+        "fitment": "Compatible with WDT750SAHZ0"
+      },
+      {
+        "partNumber": "PS11745496",
+        "title": "Dishwasher Mounting Bracket",
+        "price": null,
+        "url": "https://www.partselect.com/PS11745496-Whirlpool-WP8269145-Dishwasher-Mounting-Bracket.htm?SourceCode=21&SearchTerm=WDT750SAHZ0&ModelNum=WDT750SAHZ0",
+        "fitment": "Compatible with WDT750SAHZ0"
+      },
+      {
+        "partNumber": "PS11748190",
+        "title": "Dishwasher Tine Pivot",
+        "price": null,
+        "url": "https://www.partselect.com/PS11748190-Whirlpool-WPW10082853-Dishwasher-Tine-Pivot.htm?SourceCode=21&SearchTerm=WDT750SAHZ0&ModelNum=WDT750SAHZ0",
+        "fitment": "Compatible with WDT750SAHZ0"
+      },
+      {
+        "partNumber": "PS11750093",
+        "title": "Dishwasher Positioner",
+        "price": null,
+        "url": "https://www.partselect.com/PS11750093-Whirlpool-WPW10195840-Dishwasher-Positioner.htm?SourceCode=21&SearchTerm=WDT750SAHZ0&ModelNum=WDT750SAHZ0",
+        "fitment": "Compatible with WDT750SAHZ0"
+      },
+      {
+        "partNumber": "PS12348515",
+        "title": "Dishwasher Door Seal",
+        "price": null,
+        "url": "https://www.partselect.com/PS12348515-Whirlpool-W11177741-Dishwasher-Door-Seal.htm?SourceCode=21&SearchTerm=WDT750SAHZ0&ModelNum=WDT750SAHZ0",
+        "fitment": "Compatible with WDT750SAHZ0"
+      },
+      {
+        "partNumber": "PS11750092",
+        "title": "Dishwasher Dishrack Adjuster",
+        "price": null,
+        "url": "https://www.partselect.com/PS11750092-Whirlpool-WPW10195839-Dishwasher-Dishrack-Adjuster.htm?SourceCode=21&SearchTerm=WDT750SAHZ0&ModelNum=WDT750SAHZ0",
+        "fitment": "Compatible with WDT750SAHZ0"
+      },
+      {
+        "partNumber": "PS11755592",
+        "title": "Dishwasher Lower Spray Arm",
+        "price": null,
+        "url": "https://www.partselect.com/PS11755592-Whirlpool-WPW10491331-Dishwasher-Lower-Spray-Arm.htm?SourceCode=21&SearchTerm=WDT750SAHZ0&ModelNum=WDT750SAHZ0",
+        "fitment": "Compatible with WDT750SAHZ0"
+      },
+      {
+        "partNumber": "PS11755736",
+        "title": "Dishwasher Retainer Clip",
+        "price": null,
+        "url": "https://www.partselect.com/PS11755736-Whirlpool-WPW10503548-Dishwasher-Retainer-Clip.htm?SourceCode=21&SearchTerm=WDT750SAHZ0&ModelNum=WDT750SAHZ0",
+        "fitment": "Compatible with WDT750SAHZ0"
+      },
+      {
+        "partNumber": "PS11759673",
+        "title": "Dishwasher Filter",
+        "price": null,
+        "url": "https://www.partselect.com/PS11759673-Whirlpool-W10872845-Dishwasher-Filter.htm?SourceCode=21&SearchTerm=WDT750SAHZ0&ModelNum=WDT750SAHZ0",
+        "fitment": "Compatible with WDT750SAHZ0"
+      }
+    ],
+    "scrapedAt": "2026-06-01T01:07:23.611Z"
+  },
+  "WDT970SAKZ0": {
+    "modelNumber": "WDT970SAKZ0",
+    "brand": "Whirlpool",
+    "type": "Dishwasher",
+    "partNumbers": [
+      "PS1487167",
+      "PS9493732",
+      "PS16875972",
+      "PS11723187",
+      "PS16875940",
+      "PS12745137",
+      "PS11751729",
+      "PS12745067",
+      "PS12745068"
+    ],
+    "parts": [
+      {
+        "partNumber": "PS1487167",
+        "title": "Side Mounting Bracket Kit",
+        "price": null,
+        "url": "https://www.partselect.com/PS1487167-Whirlpool-8212560-Side-Mounting-Bracket-Kit.htm?SourceCode=21&SearchTerm=WDT970SAKZ0&ModelNum=WDT970SAKZ0",
+        "fitment": "Compatible with WDT970SAKZ0"
+      },
+      {
+        "partNumber": "PS9493732",
+        "title": "Elbow Hose Fitting",
+        "price": null,
+        "url": "https://www.partselect.com/PS9493732-Whirlpool-W10685193-Elbow-Hose-Fitting.htm?SourceCode=21&SearchTerm=WDT970SAKZ0&ModelNum=WDT970SAKZ0",
+        "fitment": "Compatible with WDT970SAKZ0"
+      },
+      {
+        "partNumber": "PS16875972",
+        "title": "Door Seal Assembly (Lower)",
+        "price": null,
+        "url": "https://www.partselect.com/PS16875972-Whirlpool-W11664713-Door-Seal-Assembly-Lower.htm?SourceCode=21&SearchTerm=WDT970SAKZ0&ModelNum=WDT970SAKZ0",
+        "fitment": "Compatible with WDT970SAKZ0"
+      },
+      {
+        "partNumber": "PS11723187",
+        "title": "SCREW",
+        "price": null,
+        "url": "https://www.partselect.com/PS11723187-Whirlpool-W10826179-SCREW.htm?SourceCode=21&SearchTerm=WDT970SAKZ0&ModelNum=WDT970SAKZ0",
+        "fitment": "Compatible with WDT970SAKZ0"
+      },
+      {
+        "partNumber": "PS16875940",
+        "title": "MANIFOLD",
+        "price": null,
+        "url": "https://www.partselect.com/PS16875940-Whirlpool-W11662109-MANIFOLD.htm?SourceCode=21&SearchTerm=WDT970SAKZ0&ModelNum=WDT970SAKZ0",
+        "fitment": "Compatible with WDT970SAKZ0"
+      },
+      {
+        "partNumber": "PS12745137",
+        "title": "Drain Hose",
+        "price": null,
+        "url": "https://www.partselect.com/PS12745137-Whirlpool-W11381654-Drain-Hose.htm?SourceCode=21&SearchTerm=WDT970SAKZ0&ModelNum=WDT970SAKZ0",
+        "fitment": "Compatible with WDT970SAKZ0"
+      },
+      {
+        "partNumber": "PS11751729",
+        "title": "Screw",
+        "price": null,
+        "url": "https://www.partselect.com/PS11751729-Whirlpool-WPW10277003-Screw.htm?SourceCode=21&SearchTerm=WDT970SAKZ0&ModelNum=WDT970SAKZ0",
+        "fitment": "Compatible with WDT970SAKZ0"
+      },
+      {
+        "partNumber": "PS12745067",
+        "title": "CORD-POWER",
+        "price": null,
+        "url": "https://www.partselect.com/PS12745067-Whirlpool-W11365011-CORD-POWER.htm?SourceCode=21&SearchTerm=WDT970SAKZ0&ModelNum=WDT970SAKZ0",
+        "fitment": "Compatible with WDT970SAKZ0"
+      },
+      {
+        "partNumber": "PS12745068",
+        "title": "CORD-POWER",
+        "price": null,
+        "url": "https://www.partselect.com/PS12745068-Whirlpool-W11365014-CORD-POWER.htm?SourceCode=21&SearchTerm=WDT970SAKZ0&ModelNum=WDT970SAKZ0",
+        "fitment": "Compatible with WDT970SAKZ0"
+      }
+    ],
+    "scrapedAt": "2026-06-01T01:07:24.934Z"
+  }
+}

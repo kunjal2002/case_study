@@ -10,6 +10,7 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DB_PATH = join(__dirname, "products.json");
 const PARTS_CSV = join(__dirname, "all_parts.csv");
+const MODELS_SEED = join(__dirname, "models-seed.json");
 
 function parseCSV(text) {
   const lines = text.split("\n").filter(l => l.trim());
@@ -124,6 +125,23 @@ function run() {
     imported++;
   }
 
+  // Load pre-scraped model data (committed to repo so Render doesn't need to scrape)
+  if (existsSync(MODELS_SEED)) {
+    try {
+      const modelsSeed = JSON.parse(readFileSync(MODELS_SEED, "utf-8"));
+      let modelsAdded = 0;
+      for (const [key, val] of Object.entries(modelsSeed)) {
+        if (!db.models[key]) {
+          db.models[key] = val;
+          modelsAdded++;
+        }
+      }
+      if (modelsAdded > 0) console.log(`Loaded ${modelsAdded} pre-scraped models from models-seed.json`);
+    } catch (e) {
+      console.warn("Could not load models-seed.json:", e.message);
+    }
+  }
+
   // Update metadata
   const refCount = Object.values(db.parts).filter(p => p.applianceType === "refrigerator").length;
   const dwCount = Object.values(db.parts).filter(p => p.applianceType === "dishwasher").length;
@@ -145,4 +163,9 @@ function run() {
   console.log(`Saved to: ${DB_PATH}`);
 }
 
-run();
+export { run };
+
+// Run directly when called as CLI
+if (process.argv[1]?.endsWith("import-csv.js")) {
+  run();
+}

@@ -201,17 +201,19 @@ async function initialize() {
   let partCount = Object.keys(db.parts || {}).length;
 
   if (partCount === 0) {
-    logger.info("No product database found — auto-seeding...");
+    logger.info("No product database found — running import-data...");
     try {
-      await import("./data/seed-db.js");
+      // This imports the CSV + models-seed.json (no scraping needed)
+      const { run } = await import("./data/import-csv.js");
+      if (typeof run === "function") await run();
       db = loadProductDB();
       partCount = Object.keys(db.parts || {}).length;
-      logger.info(`Auto-seeded ${partCount} products`);
+      logger.info(`Imported ${partCount} products`);
     } catch (err) {
-      logger.warn(`Auto-seed failed: ${err.message}`);
+      logger.warn(`Auto-import failed: ${err.message}. Run 'npm run import-data' manually.`);
     }
   } else {
-    logger.info(`Found ${partCount} products in local database`);
+    logger.info(`Found ${partCount} products in local database (${Object.keys(db.models || {}).length} models)`);
   }
 
   const openaiKey = process.env.OPENAI_API_KEY;

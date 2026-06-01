@@ -20,6 +20,10 @@ import logger from "./utils/logger.js";
 const app = express();
 const PORT = process.env.PORT || 4000;
 
+// Trust proxy — required when deployed behind Render/Vercel/Heroku load balancers
+// This fixes the express-rate-limit X-Forwarded-For warning
+app.set("trust proxy", 1);
+
 // Security middleware
 app.use(helmet({
   contentSecurityPolicy: false, // disabled for dev; enable in prod

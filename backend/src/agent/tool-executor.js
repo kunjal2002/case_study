@@ -121,7 +121,7 @@ async function handleSearchByModel({ modelNumber }) {
     };
   }
 
-  // 2. Try live scraping
+  // 2. Try live scraping (may be blocked on cloud servers — handle gracefully)
   try {
     const liveResult = await fetchPartsByModel(modelNumber);
     if (liveResult?.parts?.length > 0) {
@@ -129,10 +129,36 @@ async function handleSearchByModel({ modelNumber }) {
       return liveResult;
     }
   } catch (e) {
-    console.error(`  [LIVE] Model scrape failed: ${e.message}`);
+    if (e.message?.includes("BLOCKED_403")) {
+      console.log(`  [BLOCKED] PartSelect blocking server IP — trying keyword search fallback for ${modelNumber}`);
+    } else {
+      console.error(`  [LIVE] Model scrape failed: ${e.message}`);
+    }
   }
 
-  // 3. Knowledge base fallback
+  // 3. Search local DB for parts that list this model as compatible
+  const allParts = Object.values(db.parts || {});
+  const compatibleParts = allParts.filter(p =>
+    p.compatibleModels?.some(m => m.toUpperCase().replace(/[^A-Z0-9]/g, "") === normalized)
+  ).slice(0, 10);
+
+  if (compatibleParts.length > 0) {
+    console.log(`  [DB] Found ${compatibleParts.length} compatible parts for ${normalized}`);
+    return {
+      source: "local-database-compat",
+      modelNumber: normalized,
+      parts: compatibleParts.map(p => ({
+        partNumber: p.partSelectNumber || p.partNumber,
+        title: p.title,
+        price: p.price,
+        url: p.url,
+        fitment: `Compatible with ${normalized}`,
+      })),
+      totalFound: compatibleParts.length,
+    };
+  }
+
+  // 4. Knowledge base fallback (now empty — returns [])
   const kbResults = productKnowledgeBase.getByModel(modelNumber);
   if (kbResults.length > 0) {
     return {

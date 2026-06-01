@@ -38,12 +38,26 @@ async function fetchHTML(url, timeout = 15000) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeout);
 
+  // Rotate user agents to reduce blocking
+  const agents = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+  ];
+  const headers = {
+    ...REQUEST_HEADERS,
+    "User-Agent": agents[Math.floor(Math.random() * agents.length)],
+  };
+
   try {
     const response = await fetch(url, {
-      headers: REQUEST_HEADERS,
+      headers,
       redirect: "follow",
       signal: controller.signal
     });
+    if (response.status === 403) {
+      throw new Error(`BLOCKED_403: PartSelect returned 403 for ${url}`);
+    }
     if (!response.ok) {
       throw new Error(`HTTP ${response.status} for ${url}`);
     }

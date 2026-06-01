@@ -129,11 +129,18 @@ export function classifyIntent(query, memory = null) {
     }
   }
 
-  // Detect appliance type from text
+  // Detect appliance type from text keywords first
   let applianceType = null;
   if (/dishwasher/i.test(text)) applianceType = "dishwasher";
   else if (/refrigerator|fridge|freezer|ice\s*maker/i.test(text))
     applianceType = "refrigerator";
+
+  // Infer appliance type from model number prefix if not detected from text
+  // WDT, WDF, KDTM, GDF, SHE, MDB = dishwasher; WRS, WRF, WRT, WRX, ED, WRB = refrigerator
+  if (!applianceType && currentModelNumber) {
+    if (/^(WDT|WDF|WDH|KDTM|KDPE|GDF|SHE|MDB|DW|FPHD|FDB)/i.test(currentModelNumber)) applianceType = "dishwasher";
+    else if (/^(WRS|WRF|WRT|WRX|WRB|ED[0-9]|WRV|WRP)/i.test(currentModelNumber)) applianceType = "refrigerator";
+  }
 
   // Use entity memory from previous turns
   const memoryEntities = {};

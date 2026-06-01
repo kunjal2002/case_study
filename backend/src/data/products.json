@@ -52365,8 +52365,9 @@
     }
   },
   "metadata": {
-    "lastUpdated": "2026-05-31T22:08:39.108Z",
+    "lastUpdated": "2026-06-01T01:49:00.185Z",
     "totalParts": 1628,
-    "totalModels": 14
+    "totalModels": 14,
+    "source": "csv-import+seed"
   }
 }

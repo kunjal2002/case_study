@@ -10,7 +10,7 @@
     "scrape": "node src/data/scrape-cli.js",
     "scrape:playwright": "node src/data/playwright-cli.js",
     "import-data": "node src/data/import-csv.js",
-    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "dependencies": {
     "@google/genai": "^1.0.0",

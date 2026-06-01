@@ -173,46 +173,61 @@ case_study/
 
 ---
 
-## Quick Start (5 minutes)
+## Quick Start
 
-### Prerequisites
-- Node.js 18+ ([nodejs.org](https://nodejs.org))
-- An **OpenAI API key** — get one at [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
-  - Cost: ~$0.15/1M tokens. A full day of testing costs under $1.
-  - The app uses `gpt-4o-mini` for tool-calling and response synthesis.
+### Requirements
+- **Node.js 18 or higher** — [nodejs.org](https://nodejs.org)
+- **OpenAI API key** — get one at [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+  - Uses `gpt-4o-mini` model (~$0.15/1M tokens — a day of testing costs under $1)
+  - Alternative: free Gemini key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
 
-### Step 1 — Backend
+### Step 1 — Clone
 ```bash
 git clone https://github.com/kunjal2002/case_study.git
-cd case_study/backend
+cd case_study
+```
+
+### Step 2 — Backend Setup
+```bash
+cd backend
 npm install
 ```
 
-Create a `.env` file in the `backend/` folder:
+Create `backend/.env` with your API key:
 ```
-OPENAI_API_KEY=sk-proj-your-actual-key-here
+OPENAI_API_KEY=sk-proj-your-key-here
 PORT=4000
 ```
 
-Then run:
+Start the backend:
 ```bash
-npm run import-data   # loads 1,600+ real PartSelect products (~3 seconds)
-npm run dev           # starts API on http://localhost:4000
+npm run dev
 ```
 
-### Step 2 — Frontend (new terminal)
+You should see:
+```
+[LLM] Provider: openai | Model: gpt-4o-mini
+Found 1628 products in local database
+PartSelect AI Agent running on http://localhost:4000
+```
+
+### Step 3 — Frontend Setup (new terminal)
 ```bash
-cd ../frontend
+cd frontend
 npm install
-npm run dev           # starts UI on http://localhost:3000
+npm run dev
 ```
 
-Open **http://localhost:3000** — the app is live.
+Open **http://localhost:3000**
 
-> **Test with these queries:**
-> - "How can I install part number PS11752778?"
-> - "Is PS3406971 compatible with WDT780SAEM1?"
-> - "The ice maker on my Whirlpool fridge is not working"
+### Step 4 — Verify with these exact queries
+```
+How can I install part number PS11752778?
+Is this part compatible with my WDT780SAEM1 model?
+The ice maker on my Whirlpool fridge is not working. How can I fix it?
+```
+
+> **Note:** The product database (`products.json`) is pre-built and included in the repo — no scraping or external services required. The only external dependency is your LLM API key.
 
 ---
 
@@ -282,9 +297,11 @@ npm test
 
 ---
 
-## Deployment
+## Optional: Cloud Deployment
 
-### Option 1 — Local Development (Recommended for demo)
+> The recommended way to run this project is locally (see Quick Start above). The following instructions are for optional cloud deployment.
+
+### Local Development (Primary — see Quick Start above)
 
 ```bash
 # ── BACKEND ──────────────────────────────────

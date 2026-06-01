@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
+// This is baked in at Vercel build time from next.config.ts
 const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
 
 export function StatusIndicator() {
@@ -9,14 +10,18 @@ export function StatusIndicator() {
   useEffect(() => {
     const check = async () => {
       try {
-        // Use 20s timeout to handle Render free-tier cold starts (can take 10-30s)
-        const r = await fetch(`${API}/health`, { signal: AbortSignal.timeout(20000) });
+        // 25s timeout handles Render free-tier cold starts (can take 10-30s on first request)
+        const r = await fetch(`${API}/health`, {
+          signal: AbortSignal.timeout(25000),
+          cache: "no-store",
+        });
         setStatus(r.ok ? "online" : "offline");
       } catch {
         setStatus("offline");
       }
     };
     check();
+    // Re-check every 60 seconds
     const interval = setInterval(check, 60000);
     return () => clearInterval(interval);
   }, []);

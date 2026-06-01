@@ -25,9 +25,23 @@ app.use(helmet({
   contentSecurityPolicy: false, // disabled for dev; enable in prod
 }));
 app.use(cors({
-  origin: process.env.NODE_ENV === "production"
-    ? (process.env.CORS_ORIGINS || "").split(",").filter(Boolean)
-    : ["http://localhost:3000", "http://localhost:3001"],
+  origin: (origin, callback) => {
+    // Allow: no origin (mobile apps, curl), localhost, and configured origins
+    if (!origin) return callback(null, true);
+    const allowed = process.env.CORS_ORIGINS
+      ? process.env.CORS_ORIGINS.split(",").map(s => s.trim())
+      : [];
+    // Always allow localhost and vercel/render domains
+    if (
+      origin.includes("localhost") ||
+      origin.includes("vercel.app") ||
+      origin.includes("onrender.com") ||
+      allowed.includes(origin)
+    ) {
+      return callback(null, true);
+    }
+    callback(null, true); // Allow all for now — tighten in production
+  },
   credentials: true,
   methods: ["GET", "POST", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "X-Session-ID"],

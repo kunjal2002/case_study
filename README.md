@@ -175,34 +175,41 @@ case_study/
 
 ## Quick Start (5 minutes)
 
+### Prerequisites
+- Node.js 18+ ([nodejs.org](https://nodejs.org))
+- An **OpenAI API key** — get one at [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+  - Cost: ~$0.15/1M tokens. A full day of testing costs under $1.
+  - The app uses `gpt-4o-mini` for tool-calling and response synthesis.
+
+### Step 1 — Backend
 ```bash
-# 1. Clone the repo
 git clone https://github.com/kunjal2002/case_study.git
-cd case_study
-
-# 2. Set up backend
-cd backend
+cd case_study/backend
 npm install
-cp .env.example .env
-# Open .env and add your API key — see options below
-
-# 3. Load product data (1,600+ real PartSelect parts)
-npm run import-data
-
-# 4. Start backend
-npm run dev
-# → Running on http://localhost:4000
-
-# 5. In a NEW terminal, start frontend
-cd ../frontend
-npm install
-npm run dev
-# → Running on http://localhost:3000
 ```
 
-Open **http://localhost:3000** — the app is ready.
+Create a `.env` file in the `backend/` folder:
+```
+OPENAI_API_KEY=sk-proj-your-actual-key-here
+PORT=4000
+```
 
-> **Try these queries:**
+Then run:
+```bash
+npm run import-data   # loads 1,600+ real PartSelect products (~3 seconds)
+npm run dev           # starts API on http://localhost:4000
+```
+
+### Step 2 — Frontend (new terminal)
+```bash
+cd ../frontend
+npm install
+npm run dev           # starts UI on http://localhost:3000
+```
+
+Open **http://localhost:3000** — the app is live.
+
+> **Test with these queries:**
 > - "How can I install part number PS11752778?"
 > - "Is PS3406971 compatible with WDT780SAEM1?"
 > - "The ice maker on my Whirlpool fridge is not working"

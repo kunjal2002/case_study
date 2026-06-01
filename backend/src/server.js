@@ -185,6 +185,18 @@ app.use((err, req, res, _next) => {
 async function initialize() {
   logger.info("Initializing PartSelect AI Agent...");
 
+  // Check for API key upfront — give clear error if missing
+  const { llmProvider } = await import("./agent/llm-provider.js");
+  if (!llmProvider.isAvailable) {
+    logger.warn("═══════════════════════════════════════════════════════");
+    logger.warn("  NO LLM API KEY CONFIGURED");
+    logger.warn("  The agent will use tool-only mode (no AI reasoning).");
+    logger.warn("  To enable full AI features, add to backend/.env:");
+    logger.warn("    OPENAI_API_KEY=sk-proj-your-key-here");
+    logger.warn("  Get a key at: https://platform.openai.com/api-keys");
+    logger.warn("═══════════════════════════════════════════════════════");
+  }
+
   let db = loadProductDB();
   let partCount = Object.keys(db.parts || {}).length;
 

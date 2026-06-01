@@ -173,10 +173,46 @@ case_study/
 
 ---
 
+## Quick Start (5 minutes)
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/kunjal2002/case_study.git
+cd case_study
+
+# 2. Set up backend
+cd backend
+npm install
+cp .env.example .env
+# Open .env and add your API key — see options below
+
+# 3. Load product data (1,600+ real PartSelect parts)
+npm run import-data
+
+# 4. Start backend
+npm run dev
+# → Running on http://localhost:4000
+
+# 5. In a NEW terminal, start frontend
+cd ../frontend
+npm install
+npm run dev
+# → Running on http://localhost:3000
+```
+
+Open **http://localhost:3000** — the app is ready.
+
+> **Try these queries:**
+> - "How can I install part number PS11752778?"
+> - "Is PS3406971 compatible with WDT780SAEM1?"
+> - "The ice maker on my Whirlpool fridge is not working"
+
+---
+
 ## Setup & Running
 
 ### Prerequisites
-- **Node.js 18+**
+- **Node.js 18+** (download at [nodejs.org](https://nodejs.org))
 - **LLM API key** (one of the options below)
 
 ### Step 1: Get an API Key
